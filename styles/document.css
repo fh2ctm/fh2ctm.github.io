@@ -1,13 +1,6 @@
-.document:has(+ .rightbar) {
-  margin-left: calc(var(--document-margin) + var(--bar-width)); 
-  margin-right: calc(var(--document-margin) + var(--bar-width));
-  padding: var(--document-margin);
-  font-size: 12pt;
-}
-
 .document {
   margin-left: calc(var(--document-margin) + var(--bar-width)); 
-  margin-right: var(--document-margin);
+  margin-right: calc(var(--document-margin) + var(--bar-width));
   padding: var(--document-margin);
   font-size: 12pt;
 }
@@ -28,7 +21,9 @@
   font-size: 14pt;
 }
 
-.document quoteblock {
+.document blockquote {
   font-style: italic;
-  color: beige;
+  font-size: 11pt;
+  background-color: #e8f4f1;
+  padding: 1em 1.3em 1em 1.3em;
 }

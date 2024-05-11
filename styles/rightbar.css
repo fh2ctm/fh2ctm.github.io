@@ -10,17 +10,22 @@
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: var(--document-margin);
   text-align: right;
+  overflow-y: auto;
 }
 
 /* The navigation menu links */
-.rightbar a {
+.rightbar a, .rightbar span {
   padding: 6px 1.2em 6px 1em;
   text-decoration: none;
-  font-size: 12pt;
+  font-size: 11pt;
   font-style: italic;
-  font-weight: 500;
   color: darkgray;
   display: block;
+  font-weight: 400;
+}
+
+.rightbar a {
+  font-weight: 300;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -29,8 +34,8 @@
   color: black;
 }
 
-.rightbar a[fixed] {
-  font-weight: bold;
+.rightbar span {
+  font-weight: 600;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the leftbar (less padding and a smaller font size) */

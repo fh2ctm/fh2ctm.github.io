@@ -9,26 +9,32 @@
   background-color: #1e9a7c; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: var(--document-margin);
+  text-align: left;
+  overflow-y: auto;
 }
 
 /* The navigation menu links */
-.leftbar a {
+.leftbar a, .leftbar span {
   padding: 6px 1em 6px 1em;
   text-decoration: none;
-  font-size: 12pt;
-  font-weight: 500;
+  font-size: 11pt;
   color: #ffffff;
   display: block;
+}
+
+.leftbar a {
+  font-weight: 300;
 }
 
 /* When you mouse over the navigation links, change their color */
 .leftbar a:hover, .leftbar a[selected] {
   color: #1e9a7c;
   background-color: #ffffff;
+  font-weight: 400;
 }
 
-.leftbar a[fixed] {
-  font-weight: bold;
+.leftbar span {
+  font-weight: 600;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the leftbar (less padding and a smaller font size) */
