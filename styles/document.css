@@ -3,6 +3,8 @@
   margin-right: calc(var(--document-margin) + var(--bar-width));
   padding: var(--document-margin);
   font-size: 12pt;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .document h1 {
