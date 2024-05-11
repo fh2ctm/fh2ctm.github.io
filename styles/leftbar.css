@@ -27,10 +27,10 @@
 }
 
 /* When you mouse over the navigation links, change their color */
-.leftbar a:hover, .leftbar a[selected] {
+.leftbar a:hover, a[selected] {
   color: #1e9a7c;
   background-color: #ffffff;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .leftbar span {

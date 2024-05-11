@@ -29,9 +29,10 @@
 }
 
 /* When you mouse over the navigation links, change their color */
-.rightbar a:hover, .rightbar a[selected] {
+.rightbar a:hover {
   background-color: #bbe0d7;
   color: black;
+  font-weight: 500;
 }
 
 .rightbar span {

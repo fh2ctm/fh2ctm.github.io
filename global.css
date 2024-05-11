@@ -7,9 +7,9 @@
 
 /* Global Variables */
 :root {
-  --document-margin: 1.2em;
-  --bar-width: 16em;
   --bar-item-vertical-padding: 6px;
+  --bar-width: 16em;
+  --document-margin: 1.2em;
 }
 
 body {
