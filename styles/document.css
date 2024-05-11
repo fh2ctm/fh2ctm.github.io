@@ -1,0 +1,34 @@
+.document:has(+ .rightbar) {
+  margin-left: calc(var(--document-margin) + var(--bar-width)); 
+  margin-right: calc(var(--document-margin) + var(--bar-width));
+  padding: var(--document-margin);
+  font-size: 12pt;
+}
+
+.document {
+  margin-left: calc(var(--document-margin) + var(--bar-width)); 
+  margin-right: var(--document-margin);
+  padding: var(--document-margin);
+  font-size: 12pt;
+}
+
+.document h1 {
+  font-size: 20pt;
+}
+
+.document h2 {
+  font-size: 18pt;
+}
+
+.document h3 {
+  font-size: 16pt;
+}
+
+.document h4 {
+  font-size: 14pt;
+}
+
+.document quoteblock {
+  font-style: italic;
+  color: beige;
+}

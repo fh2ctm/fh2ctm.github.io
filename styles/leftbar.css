@@ -1,0 +1,42 @@
+/* The leftbar menu */
+.leftbar {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: var(--bar-width); /* Set the width of the leftbar */
+  position: fixed; /* Fixed leftbar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  left: 0;
+  top: 0;
+  background-color: #1e9a7c; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: var(--document-margin);
+}
+
+/* The navigation menu links */
+.leftbar a {
+  padding: 6px 1em 6px 1em;
+  text-decoration: none;
+  font-size: 12pt;
+  font-weight: 500;
+  color: #ffffff;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.leftbar a:hover, .leftbar a[selected] {
+  color: #1e9a7c;
+  background-color: #ffffff;
+}
+
+.leftbar a[fixed] {
+  font-weight: bold;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the leftbar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .leftbar {
+    padding-top: 15px;
+  }
+  .leftbar a {
+    font-size: 18px;
+  }
+}
