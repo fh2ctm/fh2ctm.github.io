@@ -15,7 +15,7 @@
 
 /* The navigation menu links */
 .leftbar a, .leftbar span {
-  padding: 6px 1em 6px 1em;
+  padding: var(--bar-item-vertical-padding) var(--document-margin);
   text-decoration: none;
   font-size: 11pt;
   color: #ffffff;
@@ -34,6 +34,7 @@
 }
 
 .leftbar span {
+  font-size: 13pt;
   font-weight: 600;
 }
 

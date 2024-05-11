@@ -29,3 +29,14 @@
   background-color: #e8f4f1;
   padding: 1em 1.3em 1em 1.3em;
 }
+
+.document code {
+  font-family: 'Commit Mono';
+  line-height: 1.5;
+  font-size: 10pt;
+}
+
+.document p > code {
+  padding: 3px 5px;
+  background: rgb(236, 236, 236);
+}

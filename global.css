@@ -7,16 +7,11 @@
 
 /* Global Variables */
 :root {
-  --document-margin: 1em;
-  --bar-width: 12em;
+  --document-margin: 1.2em;
+  --bar-width: 16em;
+  --bar-item-vertical-padding: 6px;
 }
 
 body {
   font-family: 'Drafting Mono';
-}
-
-code {
-  font-family: 'Commit Mono';
-  line-height: 1.5;
-  font-size: 10pt;
 }

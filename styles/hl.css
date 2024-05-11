@@ -2,14 +2,10 @@ pre code.hljs {
   display: block;
   overflow-x: auto;
   padding: 0;
-}
-code.hljs {
-  padding: 3px 5px
-}
-.hljs {
   background: #061e18;
   color: #ffffff
 }
+
 .hljs-tag,
 .hljs-keyword,
 .hljs-selector-tag,
