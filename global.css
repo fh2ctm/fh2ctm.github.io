@@ -1,5 +1,6 @@
 @import url('fonts/drafting-mono/reg.css');
 @import url('fonts/commit-mono/reg.css');
+
 @import url('styles/document.css');
 @import url('styles/leftbar.css');
 @import url('styles/hl.css');
@@ -9,7 +10,9 @@
 :root {
   --bar-item-vertical-padding: 6px;
   --bar-width: 16em;
+
   --document-margin: 1.2em;
+  
   --h1-top-margin: 1em;
 }
 
