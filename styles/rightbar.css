@@ -22,7 +22,7 @@
     var(--document-margin);
   text-decoration: none;
   font-size: 11pt;
-  font-style: italic;
+  /* font-style: italic; */
   color: darkgray;
   display: block;
   font-weight: 400;
@@ -43,7 +43,7 @@
 }
 
 .rightbar a[new]::before {
-  content: "⭐️ ";
+  content: "✣ ";
 }
 
 .rightbar span {
