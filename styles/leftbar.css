@@ -34,7 +34,7 @@
 }
 
 .leftbar a:hover::after {
-  content: " ←";
+  content: " <<";
 }
 
 .leftbar span {

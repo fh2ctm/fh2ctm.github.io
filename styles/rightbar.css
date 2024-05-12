@@ -39,11 +39,8 @@
 }
 
 .rightbar a:hover::before {
-  content: "→ ";
-}
-
-.rightbar a[new]::before {
-  content: "✣ ";
+  content: ">> ";
+  font-weight: 700;
 }
 
 .rightbar span {
