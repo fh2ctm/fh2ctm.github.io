@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html><head>
-  <link rel="stylesheet" href="global.css" />
+  <link rel="stylesheet" href="styles/global.css"/>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="auto/global.js"></script>
   <script>
     hljs.highlightAll();
   </script>
   <meta charset="utf8"/>
-  <title>Code</title>
+  <title filename="code">Code</title>
 </head><body>
 
 <!-- Left Bar -->
 <div class="leftbar">
   <span>Rex's Website</span>
   <span>&nbsp;</span>
-  <a href="index.html">About</a>
-  <a href="code.html" selected>Code</a>
-  <a href="courses-taken.html">Courses Taken</a>
-  <a href="lang.html">Language</a>
-  <a href="math.html">Math</a>
+  <script>makeLeftBar();</script>
 </div>
 
 <!-- Page Content -->
