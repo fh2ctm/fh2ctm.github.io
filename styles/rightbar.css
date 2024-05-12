@@ -1,8 +1,8 @@
-/* The leftbar menu */
+/* The right bar menu */
 .rightbar {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: var(--bar-width); /* Set the width of the leftbar */
-  position: fixed; /* Fixed leftbar (stay in place on scroll) */
+  width: var(--bar-width); /* Set the width of the right bar */
+  position: fixed; /* Fixed right bar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0;
   right: 0;
@@ -15,7 +15,11 @@
 
 /* The navigation menu links */
 .rightbar a, .rightbar span {
-  padding: var(--bar-item-vertical-padding) calc(var(--document-margin)*1.2) var(--bar-item-vertical-padding) var(--document-margin);
+  padding: 
+    var(--bar-item-vertical-padding) 
+    calc(1.2 * var(--document-margin))
+    var(--bar-item-vertical-padding)
+    var(--document-margin);
   text-decoration: none;
   font-size: 11pt;
   font-style: italic;
@@ -35,12 +39,16 @@
   font-weight: 500;
 }
 
+.rightbar a[new]::before {
+  content: "⭐️ ";
+}
+
 .rightbar span {
   font-size: 13pt;
   font-weight: 600;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the leftbar (less padding and a smaller font size) */
+/* On smaller screens, where height is less than 450px, change the style of the right bar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .rightbar {
     padding-top: 15px;

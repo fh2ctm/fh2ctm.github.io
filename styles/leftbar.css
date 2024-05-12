@@ -1,8 +1,8 @@
-/* The leftbar menu */
+/* The left bar menu */
 .leftbar {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: var(--bar-width); /* Set the width of the leftbar */
-  position: fixed; /* Fixed leftbar (stay in place on scroll) */
+  width: var(--bar-width); /* Set the width of the left bar */
+  position: fixed; /* Fixed left bar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   left: 0;
   top: 0;
@@ -33,12 +33,16 @@
   font-weight: 500;
 }
 
+.leftbar a[selected]::after {
+  content: " ←";
+}
+
 .leftbar span {
   font-size: 13pt;
   font-weight: 600;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the leftbar (less padding and a smaller font size) */
+/* On smaller screens, where height is less than 450px, change the style of the left bar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .leftbar {
     padding-top: 15px;
