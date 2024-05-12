@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html><head>
-  <link rel="stylesheet" href="global.css"/>
+  <link rel="stylesheet" href="styles/global.css"/>
   <meta charset="utf8"/>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="auto/bar.js"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <title>Courses Taken</title>
+  <title filename="courses-taken">Courses Taken</title>
 </head><body>
 
 <!-- Left Bar -->
 <div class="leftbar">
   <span>Rex's Website</span>
   <span>&nbsp;</span>
-  <a href="index.html">About</a>
-  <a href="code.html">Code</a>
-  <a href="courses-taken.html" selected>Courses Taken</a>
-  <a href="lang.html">Language</a>
-  <a href="math.html">Math</a>
+  <script>makeLeftBar();</script>
 </div>
 
 <!-- Page Content -->

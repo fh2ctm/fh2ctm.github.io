@@ -1,10 +1,10 @@
 @import url('fonts/drafting-mono/reg.css');
 @import url('fonts/commit-mono/reg.css');
 
-@import url('styles/document.css');
-@import url('styles/leftbar.css');
-@import url('styles/hl.css');
-@import url('styles/rightbar.css');
+@import url('document.css');
+@import url('leftbar.css');
+@import url('hl.css');
+@import url('rightbar.css');
 
 /* Global Variables */
 :root {
