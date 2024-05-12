@@ -34,9 +34,12 @@
 
 /* When you mouse over the navigation links, change their color */
 .rightbar a:hover {
-  background-color: #bbe0d7;
-  color: black;
-  font-weight: 500;
+  color: #1e9a7c;
+  font-weight: 600;
+}
+
+.rightbar a:hover::before {
+  content: "→ ";
 }
 
 .rightbar a[new]::before {
