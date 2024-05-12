@@ -2,8 +2,6 @@ const filenameToEntry = {
   "index": "About",
   "code": "Code",
   "courses-taken": "Courses Taken",
-  "lang": "Language",
-  "math": "Math",
 }
 
 function makeLeftBar() {
