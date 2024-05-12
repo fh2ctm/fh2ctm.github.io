@@ -47,6 +47,7 @@
 }
 
 .rightbar span {
+  padding: var(--bar-item-vertical-padding) calc(0.9 * var(--document-margin));
   font-size: 13pt;
   font-weight: 600;
 }
