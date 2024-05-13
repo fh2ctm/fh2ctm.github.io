@@ -39,7 +39,7 @@
 }
 
 .rightbar a:hover::before {
-  content: ">> ";
+  content: "-> ";
   font-weight: 700;
 }
 
