@@ -8,19 +8,24 @@
 }
 
 .document h1 {
-  font-size: 20pt;
+  font-size: 18pt;
 }
 
 .document h1:not(:first-child)  {
   margin-top: var(--h1-top-margin);
 }
 
-.document h3 {
+.document h2 {
   font-size: 16pt;
 }
 
-.document h4 {
+.document h3 {
   font-size: 14pt;
+}
+
+.document h4, .document h5, .document h6 {
+  font-size: 12pt;
+  font-weight: 600;
 }
 
 .document blockquote {
