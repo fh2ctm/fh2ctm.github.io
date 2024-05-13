@@ -13,26 +13,28 @@
   overflow-y: auto;
 }
 
-/* The navigation menu links */
 .rightbar a, .rightbar span {
+  text-decoration: none;
+  color: darkgray;
+  display: block;
+}
+
+.rightbar span {
+  padding: var(--bar-item-vertical-padding) calc(0.9 * var(--document-margin));
+  font-size: 13pt;
+  font-weight: 500;
+}
+
+.rightbar a {
   padding: 
     var(--bar-item-vertical-padding) 
     calc(1.2 * var(--document-margin))
     var(--bar-item-vertical-padding)
     var(--document-margin);
-  text-decoration: none;
   font-size: 11pt;
-  /* font-style: italic; */
-  color: darkgray;
-  display: block;
-  font-weight: 400;
-}
-
-.rightbar a {
   font-weight: 300;
 }
 
-/* When you mouse over the navigation links, change their color */
 .rightbar a:hover {
   color: #1e9a7c;
   font-weight: 400;
@@ -42,13 +44,6 @@
   content: "-> ";
 }
 
-.rightbar span {
-  padding: var(--bar-item-vertical-padding) calc(0.9 * var(--document-margin));
-  font-size: 13pt;
-  font-weight: 500;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the right bar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .rightbar {
     padding-top: 15px;
