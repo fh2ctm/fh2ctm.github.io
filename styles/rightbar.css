@@ -35,18 +35,17 @@
 /* When you mouse over the navigation links, change their color */
 .rightbar a:hover {
   color: #1e9a7c;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .rightbar a:hover::before {
   content: "-> ";
-  font-weight: 700;
 }
 
 .rightbar span {
   padding: var(--bar-item-vertical-padding) calc(0.9 * var(--document-margin));
   font-size: 13pt;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the right bar (less padding and a smaller font size) */

@@ -30,7 +30,7 @@
 .leftbar a:hover, a[selected] {
   color: #1e9a7c;
   background-color: #ffffff;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .leftbar a:hover::after {
@@ -40,7 +40,7 @@
 .leftbar span {
   padding: var(--bar-item-vertical-padding) calc(0.85 * var(--document-margin));
   font-size: 13pt;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the left bar (less padding and a smaller font size) */
