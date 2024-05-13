@@ -1,16 +1,15 @@
-/* The right bar menu */
 .rightbar {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: var(--bar-width); /* Set the width of the right bar */
-  position: fixed; /* Fixed right bar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
   top: 0;
   right: 0;
-  background-color: white; /* Black */
+  height: 100%; /* Full-height */
+  position: fixed; /* Fixed right bar */
+  z-index: 1; /* Stay on top */
   overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-y: auto;
+  width: var(--bar-width);
   padding-top: var(--document-margin);
   text-align: right;
-  overflow-y: auto;
+  background-color: white;
 }
 
 .rightbar a, .rightbar span {
