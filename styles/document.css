@@ -7,6 +7,10 @@
   overflow-y: auto;
 }
 
+.document[index] {
+  margin-right: var(--document-margin)
+}
+
 .document h1 {
   font-size: calc(var(--document-font-size) + 6pt);
 }
