@@ -2,13 +2,13 @@
   margin-left: calc(var(--document-margin) + var(--bar-width)); 
   margin-right: calc(var(--document-margin) + var(--bar-width));
   padding: var(--document-margin);
-  font-size: 12pt;
+  font-size: var(--document-font-size);
   overflow-x: hidden;
   overflow-y: auto;
 }
 
 .document h1 {
-  font-size: 18pt;
+  font-size: calc(var(--document-font-size) + 6pt);
 }
 
 .document h1:not(:first-child)  {
@@ -16,41 +16,56 @@
 }
 
 .document h2 {
-  font-size: 16pt;
+  font-size: calc(var(--document-font-size) + 5pt);
 }
 
 .document h3 {
-  font-size: 14pt;
+  font-size: calc(var(--document-font-size) + 4pt);
 }
 
-.document h4, .document h5, .document h6 {
-  font-size: 12pt;
-  font-weight: 600;
+.document h4 {
+  font-size: calc(var(--document-font-size) + 3pt);
+}
+
+.document h5 {
+  font-size: calc(var(--document-font-size) + 2pt);
+}
+
+.document h6 {
+  font-size: calc(var(--document-font-size) + 1pt);
 }
 
 .document blockquote {
   font-style: italic;
-  font-size: 11pt;
+  font-size: calc(var(--document-font-size) - 1pt);
   background-color: #e8f4f1;
-  padding: 1em 1.3em 1em 1.3em;
+  padding: 
+    var(--blockquote-vertical-padding) 
+    var(--blockquote-horizontal-padding);
 }
 
 .document code {
   font-family: 'Commit Mono';
-  line-height: 1.5;
-  font-size: 10pt;
+  line-height: var(--code-line-height);
+  font-size: calc(var(--document-font-size) - 2pt);
 }
 
 .document p > code {
-  padding: 3px 5px;
+  padding: 
+    var(--code-vertical-padding) 
+    var(--code-horizontal-padding);
   background: rgb(236, 236, 236);
 }
 
 .document p a[href] {
-  color: #1b8a6f;
+  color: var(--link-color);
 }
 
 .document p a[href]:hover {
-  color: #4aae96;
-  text-shadow: 0px 4px 8px #bbe0d7;
+  color: var(--link-hover-color);
+  text-shadow: 
+    var(--link-hover-shadow-xshift) 
+    var(--link-hover-shadow-yshift) 
+    var(--link-hover-shadow-radius) 
+    var(--link-hover-shadow-color);
 }
