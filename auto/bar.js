@@ -15,6 +15,7 @@ function makeLeftBar(forIndex=false) {
     divider.innerHTML = "\u00A0";
     leftBar.appendChild(divider);
   }
+  makeFooter();
 }
 
 function makeLeftBarWithObject(obj, forIndex=false) {

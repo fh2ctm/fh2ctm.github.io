@@ -47,6 +47,30 @@
   content: " <-";
 }
 
+footer {
+  bottom: 0;
+  left: 0;
+  height: auto; 
+  position: absolute;
+  z-index: 2; /* Stay on top */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-y: hidden;
+  padding-left: var(--document-margin);
+  padding-bottom: var(--document-margin);
+  color: transparent;
+  font-size: 10px;
+}
+
+footer a {
+  color: unset;
+  text-decoration: unset;
+  display: block;
+}
+
+footer a:hover {
+  color: white;
+}
+
 @media screen and (max-height: 450px) {
   .leftbar {
     padding-top: 15px;
