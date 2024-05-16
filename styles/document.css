@@ -12,7 +12,7 @@
 }
 
 .document h1 {
-  font-size: calc(var(--document-font-size) + 6pt);
+  font-size: calc(var(--document-font-size) + 8pt);
 }
 
 .document h1:not(:first-child)  {
@@ -20,22 +20,18 @@
 }
 
 .document h2 {
-  font-size: calc(var(--document-font-size) + 5pt);
-}
-
-.document h3 {
   font-size: calc(var(--document-font-size) + 4pt);
 }
 
-.document h4 {
-  font-size: calc(var(--document-font-size) + 3pt);
+.document h2::before {
+  content: "✢ ";
 }
 
-.document h5 {
+.document h3 {
   font-size: calc(var(--document-font-size) + 2pt);
 }
 
-.document h6 {
+.document h4 {
   font-size: calc(var(--document-font-size) + 1pt);
 }
 
@@ -54,7 +50,7 @@
   font-size: calc(var(--document-font-size) - 2pt);
 }
 
-.document p > code {
+.document p > code, li > code, th > code, td > code {
   padding: 
     var(--code-vertical-padding) 
     var(--code-horizontal-padding);
@@ -72,4 +68,24 @@
     var(--link-hover-shadow-yshift) 
     var(--link-hover-shadow-radius) 
     var(--link-hover-shadow-color);
+}
+
+.document table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-family: 'Iosevka';
+}
+
+.document table, td, th {
+  border: 0.6px solid darkgray;
+  padding: 4pt 7pt;
+}
+
+.document td {
+  text-align: left;
+}
+
+.document thead th {
+  font-weight: 600;
+  width: fit-content;
 }
