@@ -1,35 +1,46 @@
-const pageCategory = {
-  Academic: {
-    "courses-taken": "Courses Taken",
-  },
-  Language: {
-    "qeerty": "QÉERTY Keyboard"
-  }
-};
+import { NewNode } from "/gen/meta.js";
+import pageCategory from "/gen/site-dir.js"
 
-function makeLeftBar() {
-  const leftBar = document.getElementsByClassName("leftbar")[0];
-  for (const [category, pages] of Object.entries(pageCategory)) {
-    const categoryHeader = document.createElement("span");
-    categoryHeader.innerHTML = category;
-    leftBar.appendChild(categoryHeader);
-    makeLeftBarWithObject(pages);
-    const divider = document.createElement("span");
-    divider.innerHTML = "\u00A0";
-    leftBar.appendChild(divider);
-  }
+/* <a signature href="index.html">◊ Rex's Website</a> */
+function LeftBarSignature() {
+  return NewNode("a", {
+    "signature": "", 
+    "href": "/index.html"
+  }, "◊ Rex's Website");
 }
 
-function makeLeftBarWithObject(obj) {
-  const leftBar = document.getElementsByClassName("leftbar")[0];
-  const currentFilename = document.getElementsByTagName("title")[0].attributes["filename"].value;
-  for (const [filename, entry] of Object.entries(obj)) {
-    const newLink = document.createElement("a");
-    newLink.setAttribute("href", filename + ".html");
-    newLink.innerHTML = entry;
-    if (filename == currentFilename) {
-      newLink.setAttribute("selected", "");
-    }
-    leftBar.appendChild(newLink);
-  }
+/* <span divider>&nbsp;</span> */
+function Divider(text="\u00A0") {
+  return NewNode("span", {}, text);
+}
+
+/* <div class="leftbar"></div> */
+function LeftBar() {
+  return NewNode("div", {
+    "class": "leftbar"
+  })
+}
+
+/* <a href=path>text</a> */
+function Link(path, text) {
+  return NewNode("a", {
+    "href": path
+  }, text)
+}
+
+export default function makeLeftBar() {
+  let leftBar = LeftBar();
+  leftBar.appendChild(LeftBarSignature());
+  leftBar.appendChild(Divider());
+  Object.entries(pageCategory).forEach(([category, pages]) => {
+    leftBar.appendChild(Divider(category));
+    Object.entries(pages).forEach(([title, page]) => {
+      leftBar.appendChild(
+        Link("/pages/" + category.toLowerCase() + "/" + title + ".html", page)
+      );
+    });
+    leftBar.appendChild(Divider());
+  });
+  let doc = document.querySelector(".document");
+  document.body.insertBefore(leftBar, doc);
 }

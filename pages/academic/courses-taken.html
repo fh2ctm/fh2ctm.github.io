@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html><head>
-  <link rel="stylesheet" href="styles/global.css"/>
-  <meta charset="utf8"/>
-  <script src="gen/leftbar.js"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <title filename="courses-taken">Courses Taken</title>
+  <title>Rex's Website</title>
+  <script type="module">
+    import makeHead from "/gen/head.js";
+    makeHead();
+  </script>
 </head><body>
 
 <!-- Left Bar -->
-<div class="leftbar">
-  <a href="index.html" signature>◊ Rex's Website</a>
-  <span>&nbsp;</span>
-  <script>makeLeftBar();</script>
-</div>
+<script type="module">
+  import makeLeftBar from "/gen/leftbar.js";
+  makeLeftBar();
+</script>
 
-<footer>
-  <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">Licenced under CC BY-NC-ND 4.0</a>
-</footer>
+<!-- Footer -->
+<script type="module">
+  import makeFooter from "/gen/footer.js";
+  makeFooter();
+</script>
 
 <!-- Page Content -->
 <div class="document">

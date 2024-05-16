@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html><head>
-  <link rel="stylesheet" href="styles/global.css"/>
-  <meta charset="utf8"/>
-  <script src="gen/leftbar.js"></script>
-  <title filename="qeerty">QÉERTY Keyboard Layout</title>
+  <title>Rex's Website</title>
+  <script type="module">
+    import makeHead from "/gen/head.js";
+    makeHead();
+  </script>
 </head><body>
 
-<!-- Footer -->
-<footer>
-  <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">Licenced under CC BY-NC-ND 4.0</a>
-</footer>
-
 <!-- Left Bar -->
-<div class="leftbar">
-  <a href="index.html" signature>◊ Rex's Website</a>
-  <span>&nbsp;</span>
-  <script>makeLeftBar();</script>
-</div>
+<script type="module">
+  import makeLeftBar from "/gen/leftbar.js";
+  makeLeftBar();
+</script>
+
+<!-- Footer -->
+<script type="module">
+  import makeFooter from "/gen/footer.js";
+  makeFooter();
+</script>
 
 <!-- Right Bar -->
 <div class="rightbar">
@@ -31,7 +32,7 @@
   <span>&nbsp;</span>
   <span>Usage</span>
   <a href="#keymap">Keymap</a>
-   <a href="#mac">macOS Download</a>
+  <a href="#mac">macOS Download</a>
   <span>&nbsp;</span>
 </div>
 

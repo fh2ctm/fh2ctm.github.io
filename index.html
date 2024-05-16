@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html><head>
-  <link rel="stylesheet" href="styles/global.css"/>
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon"/>
-  <meta charset="utf8"/>
-  <script src="gen/leftbar.js"></script>
-  <title filename="">Rex's Website</title>
+  <title>Rex's Website</title>
+  <script type="module">
+    import makeHead from "/gen/head.js";
+    makeHead();
+  </script>
 </head><body>
 
 <!-- Left Bar -->
-<div class="leftbar">
-  <a signature href="index.html">◊ Rex's Website</a>
-  <span divider>&nbsp;</span>
-  <script>makeLeftBar();</script>
-</div>
+<script type="module">
+  import makeLeftBar from "/gen/leftbar.js"; 
+  makeLeftBar();
+</script>
 
-<footer>
-  <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">Licenced under CC BY-NC-ND 4.0</a>
-</footer>
+<!-- Footer -->
+<script type="module">
+  import makeFooter from "/gen/footer.js";
+  makeFooter();
+</script>
 
 <!-- Page Content -->
-<div class="document" index>
+<div class="document">
   <h1 id="hello">Hello</h1>
   <p>Testing out my new website. This is a very very very very very very very very very very long sentence so I can be very very very very very very very very sure that things are working. </p>
   <blockquote>
     You know what, someone who was really old said something that sounded really clever before. I think I will use it so that people will think I'm right. &mdash;&mdash; Rex
   </blockquote>
   <p>
-    My name is Rex. I know, very cool name. I am studying <a href="https://slither.io">math</a> at <a href="https://www.uwaterloo.ca">University of Waterloo</a>. 
+    My name is Rex. I am studying <a href="https://slither.io">math</a> at <a href="https://www.uwaterloo.ca">University of Waterloo</a>. 
     I made this website for fun, of course. Nothing here look serious. 
   </p>
 </div>
