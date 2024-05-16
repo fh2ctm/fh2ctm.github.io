@@ -6,23 +6,6 @@
   <title>QÉERTY Keyboard Layout</title>
 </head><body>
 
-<!-- Right Bar -->
-<div class="rightbar">
-  <span>Motivation</span>
-  <a href="#intro">QÉERTY keyboard</a>
-  <a href="#current">Current situation</a>
-  <span>&nbsp;</span>
-  <span>Details</span>
-  <a href="#goal">Goal</a>
-  <a href="#diff-qwerty">Compared to QWERTY</a>
-  <a href="#design">Design considerations</a>
-  <span>&nbsp;</span>
-  <span>Usage</span>
-  <a href="#keymap">Keymap</a>
-  <a href="#mac">macOS Download</a>
-  <span>&nbsp;</span>
-</div>
-
 <!-- Body -->
 <div class="document">
 
@@ -151,5 +134,23 @@
 
 <!-- Autogen -->
 <script type="module" src="/gen/global.js"></script>
+<script type="module">
+  import makeRightBar from "/gen/rightbar.js";
+  makeRightBar({
+    "Motivation": {
+      "intro": "QÉERTY keyboard",
+      "current": "Current situation"
+    }, 
+    "Details": {
+      "goal": "Goal", 
+      "diff-qwerty": "Compared to QWERTY", 
+      "design": "Design considerations"
+    }, 
+    "Usages": {
+      "keymap": "Keymap", 
+      "mac": "macOS download"
+    }
+  });
+</script>
 
 </body></html>
