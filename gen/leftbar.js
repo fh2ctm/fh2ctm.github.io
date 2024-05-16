@@ -1,5 +1,5 @@
 import { NewNode } from "/gen/meta.js";
-import pageCategory from "/gen/site-dir.js"
+import pageCategory from "/data/site-dir.js"
 
 /* <a signature href="index.html">◊ Rex's Website</a> */
 function LeftBarSignature() {
@@ -35,12 +35,10 @@ export default function makeLeftBar() {
   Object.entries(pageCategory).forEach(([category, pages]) => {
     leftBar.appendChild(Divider(category));
     Object.entries(pages).forEach(([title, page]) => {
-      leftBar.appendChild(
-        Link("/pages/" + category.toLowerCase() + "/" + title + ".html", page)
-      );
+      let pageDir = "/pages/" + category.toLowerCase() + "/" + title + ".html";
+      leftBar.appendChild(Link(pageDir, page));
     });
     leftBar.appendChild(Divider());
   });
-  let doc = document.querySelector(".document");
-  document.body.insertBefore(leftBar, doc);
+  document.body.appendChild(leftBar);
 }

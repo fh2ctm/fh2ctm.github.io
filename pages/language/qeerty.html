@@ -1,23 +1,10 @@
 <!DOCTYPE html>
 <html><head>
-  <title>Rex's Website</title>
   <link rel="stylesheet" href="/styles/global.css" />
   <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
   <meta charset="utf8" />
   <title>QÉERTY Keyboard Layout</title>
 </head><body>
-
-<!-- Left Bar -->
-<script type="module">
-  import makeLeftBar from "/gen/leftbar.js";
-  makeLeftBar();
-</script>
-
-<!-- Footer -->
-<script type="module">
-  import makeFooter from "/gen/footer.js";
-  makeFooter();
-</script>
 
 <!-- Right Bar -->
 <div class="rightbar">
@@ -161,5 +148,8 @@
   <h1 id="keymap">Keymap</h1>
 
 </div>
+
+<!-- Autogen -->
+<script type="module" src="/gen/global.js"></script>
 
 </body></html>
