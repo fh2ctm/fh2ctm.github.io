@@ -10,7 +10,7 @@
 /* Global Variables */
 :root {
   --bar-item-vertical-padding: 6px;
-  --bar-width: 16em;
+  --bar-width: 14em;
 
   --blockquote-vertical-padding: 1em;
   --blockquote-horizontal-padding: 1.3em;
@@ -35,4 +35,5 @@
 
 body {
   font-family: 'Drafting Mono';
+  font-weight: normal;
 }
