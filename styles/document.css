@@ -7,8 +7,8 @@
   overflow-y: auto;
 }
 
-.document[index] {
-  margin-right: var(--document-margin)
+.document[no-rightbar] {
+  margin-right: var(--document-margin);
 }
 
 .document h1 {

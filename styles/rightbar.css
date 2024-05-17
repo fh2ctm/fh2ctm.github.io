@@ -43,6 +43,12 @@
   content: "-> ";
 }
 
+@media screen and (max-width: 360px) {
+  .rightbar {
+    visibility: hidden;
+  }
+}
+
 @media screen and (max-height: 450px) {
   .rightbar {
     padding-top: 15px;
