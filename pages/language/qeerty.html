@@ -3,8 +3,29 @@
   <link rel="stylesheet" href="/styles/global.css" />
   <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
   <meta charset="utf8" />
-  <title>QÉERTY Keyboard Layout</title>
+  <title filename="qeerty">QÉERTY Keyboard Layout</title>
 </head><body>
+
+<!-- Autogen -->
+<script type="module" src="/gen/global.js"></script>
+<script type="module">
+  import makeRightBar from "/gen/rightbar.js";
+  makeRightBar({
+    "Motivation": {
+      "intro": "QÉERTY keyboard",
+      "current": "Current situation"
+    },
+    "Details": {
+      "goal": "Goal",
+      "diff-qwerty": "Compared to QWERTY",
+      "design": "Design"
+    },
+    "Usage": {
+      "keymap": "Keymap",
+      "down": "Download"
+    }
+  });
+</script>
 
 <!-- Body -->
 <div class="document">
@@ -136,26 +157,5 @@
   </p>
 
 </div>
-
-<!-- Autogen -->
-<script type="module" src="/gen/global.js"></script>
-<script type="module">
-  import makeRightBar from "/gen/rightbar.js";
-  makeRightBar({
-    "Motivation": {
-      "intro": "QÉERTY keyboard",
-      "current": "Current situation"
-    }, 
-    "Details": {
-      "goal": "Goal", 
-      "diff-qwerty": "Compared to QWERTY", 
-      "design": "Design"
-    }, 
-    "Usage": {
-      "keymap": "Keymap", 
-      "down": "Download"
-    }
-  });
-</script>
 
 </body></html>

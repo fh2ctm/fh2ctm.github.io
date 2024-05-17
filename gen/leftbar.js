@@ -1,4 +1,4 @@
-import { NewNode } from "/gen/meta.js";
+import { NewNode, CurrentFilename } from "/gen/meta.js";
 import pageCategory from "/data/site-dir.js"
 
 /* <a signature href="index.html">◊ Rex's Website</a> */
@@ -16,19 +16,18 @@ function Divider(text="\u00A0") {
 
 /* <div class="leftbar"></div> */
 function LeftBar() {
-  return NewNode("div", {
-    "class": "leftbar"
-  })
+  return NewNode("div", { "class": "leftbar" });
 }
 
 /* <a href=path>text</a> */
-function Link(path, text) {
-  return NewNode("a", {
-    "href": path
-  }, text)
+function Link(path, text, selected=false) {
+  let link = NewNode("a", { "href": path }, text);
+  selected && link.setAttribute("selected", "");
+  return link
 }
 
 export default function makeLeftBar() {
+  let filename = CurrentFilename();
   let leftBar = LeftBar();
   leftBar.appendChild(LeftBarSignature());
   leftBar.appendChild(Divider());
@@ -36,7 +35,7 @@ export default function makeLeftBar() {
     leftBar.appendChild(Divider(category));
     Object.entries(pages).forEach(([title, page]) => {
       let pageDir = "/pages/" + category.toLowerCase() + "/" + title + ".html";
-      leftBar.appendChild(Link(pageDir, page));
+      leftBar.appendChild(Link(pageDir, page, filename == title));
     });
     leftBar.appendChild(Divider());
   });

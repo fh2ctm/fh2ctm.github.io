@@ -15,3 +15,7 @@ export function NewNode(tag="badtag", attr=null, text="") {
   newNode.innerText = text;
   return newNode;
 }
+
+export function CurrentFilename() {
+  return document.querySelector("head title").getAttribute("filename") || ""
+}
