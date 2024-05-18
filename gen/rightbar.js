@@ -14,7 +14,7 @@ function Divider(text = "\u00A0") {
 
 /* <a href="#id">text</a> */
 function Link(id, text) {
-  let localPath = "# " + id;
+  let localPath = "#" + id;
   return NewNode("a", {
     "href": localPath
   }, text)
@@ -25,8 +25,11 @@ export default function makeRightBar(headingObj) {
   Object.entries(headingObj).forEach(([section, headings]) => {
     rightbar.appendChild(Divider(section));
     if (Array.isArray(headings)) {
-      headings.entries().forEach((heading) => {
-        let id = heading.replace(/\s/g, "").toLowerCase();
+      headings.forEach((heading) => {
+        let id = heading
+          .replace(/\s/g, "")
+          .replace(/\//g, "-")
+          .toLowerCase();
         rightbar.appendChild(Link(id, heading));
       })
     } else {
