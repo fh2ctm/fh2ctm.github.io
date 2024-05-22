@@ -1,7 +1,7 @@
 /**
  * Create a new html element. 
  * @param {string} tag Type of html element. 
- * @param {(Object.<string,string>|string[])} attr Attributes the element should have. 
+ * @param {(Object<string,string>|string[])} attr Attributes the element should have. 
  * @param {string} text Inner text of the tag. 
  * @returns {Element} A new HTMLElement. 
  */
