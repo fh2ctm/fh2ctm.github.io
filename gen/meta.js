@@ -3,7 +3,7 @@
  * @param {string} tag Type of html element. 
  * @param {(Object.<string,string>|string[])} attr Attributes the element should have. 
  * @param {string} text Inner text of the tag. 
- * @returns {HTMLElement} A new HTMLElement. 
+ * @returns {Element} A new HTMLElement. 
  */
 export function NewNode(tag="badtag", attr=null, text="") {
   let newNode = document.createElement(tag);
@@ -28,40 +28,4 @@ export function NewNode(tag="badtag", attr=null, text="") {
  */
 export function CurrentFilename() {
   return document.querySelector("head title").getAttribute("filename") || ""
-}
-
-/**
- * Create a new <link> to a css stylesheet. 
- * @param {string} path Path to css. 
- * @returns {HTMLElement} A <link> to the css. 
- */
-export function CSS(path) {
-  return NewNode("link", {
-    "rel": "stylesheet",
-    "href": path
-  })
-}
-
-/**
- * Create a new <link> to a ico favicon file. 
- * @param {string} path Path to ico. 
- * @returns {HTMLElement} A <link> to the ico. 
- */
-export function Favicon(path) {
-  return NewNode("link", {
-    "rel": "icon", 
-    "href": path,
-    "type": "image/x-icon"
-  })
-}
-
-/**
- * Create a new charset <meta>.
- * @param {string} charset Desired charset. 
- * @returns {HTMLElement} A <meta> of charset. 
- */
-export function Charset(charset) {
-  return NewNode("meta", {
-    "charset": charset
-  })
 }
