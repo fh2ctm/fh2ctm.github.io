@@ -1,4 +1,4 @@
-// create a new html tag with attr (indicated as obj) and inner text
+// create a new html tag with attr (indicated as obj or arr) and inner text
 export function NewNode(tag="badtag", attr=null, text="") {
   let newNode = document.createElement(tag);
   if (attr) {
