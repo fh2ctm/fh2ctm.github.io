@@ -1,81 +1,84 @@
 .leftbar {
-  top: 0;
-  left: 0;
-  height: 100%; /* Full-height */
-  position: fixed; /* Fixed left bar */
-  z-index: 1; /* Stay on top */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  overflow-y: auto;
-  width: var(--bar-width); 
-  padding-top: var(--document-margin);
-  text-align: left;
-  background-color: #1e9a7c; 
+    top: 0;
+    left: 0;
+    height: 100%; /* Full-height */
+    position: fixed; /* Fixed left bar */
+    z-index: 1; /* Stay on top */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: auto;
+    width: var(--bar-width);
+    padding-top: var(--document-margin);
+    text-align: left;
+    background-color: #1e9a7c;
 }
 
-.leftbar span, .leftbar a[signature] {
-  text-decoration: none;
-  display: block;
-  color: white;
-  padding: var(--bar-item-vertical-padding) calc(0.85 * var(--document-margin));
-  font-size: 13pt;
-  font-weight: 500;
+.leftbar span,
+.leftbar a[signature] {
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: var(--bar-item-vertical-padding)
+        calc(0.85 * var(--document-margin));
+    font-size: 13pt;
+    font-weight: 500;
 }
 
 .leftbar a[signature]:hover {
-  color: #1e9a7c;
-  background-color: #ffffff;
-  font-weight: 600;
-  text-decoration: underline;
+    color: #1e9a7c;
+    background-color: #ffffff;
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 .leftbar a:not([signature]) {
-  padding: var(--bar-item-vertical-padding) var(--document-margin);
-  text-decoration: none;
-  font-size: 11pt;
-  font-weight: 300;
-  color: #ffffff;
-  display: block;
+    padding: var(--bar-item-vertical-padding) var(--document-margin);
+    text-decoration: none;
+    font-size: 11pt;
+    font-weight: 300;
+    color: #ffffff;
+    display: block;
 }
 
-.leftbar a:not([signature]):hover, .leftbar a[selected] {
-  color: #1e9a7c;
-  background-color: #ffffff;
-  font-weight: 400;
+.leftbar a:not([signature]):hover,
+.leftbar a[selected] {
+    color: #1e9a7c;
+    background-color: #ffffff;
+    font-weight: 400;
 }
 
 .leftbar a:not([signature]):hover::after {
-  content: " <-";
+    content: " <-";
 }
 
 footer {
-  bottom: 0;
-  left: 0;
-  height: auto; 
-  position: absolute;
-  z-index: 2; /* Stay on top */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  overflow-y: hidden;
-  padding-left: var(--document-margin);
-  padding-bottom: var(--document-margin);
-  color: transparent;
-  font-size: 10px;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    position: absolute;
+    z-index: 2; /* Stay on top */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: hidden;
+    padding-left: var(--document-margin);
+    padding-bottom: var(--document-margin);
+    color: transparent;
+    font-size: 10px;
 }
 
 footer a {
-  color: unset;
-  text-decoration: unset;
-  display: block;
+    color: unset;
+    text-decoration: unset;
+    display: block;
 }
 
 footer a:hover {
-  color: white;
+    color: white;
 }
 
 @media screen and (max-height: 450px) {
-  .leftbar {
-    padding-top: 15px;
-  }
-  .leftbar a {
-    font-size: 18px;
-  }
+    .leftbar {
+        padding-top: 15px;
+    }
+    .leftbar a {
+        font-size: 18px;
+    }
 }
