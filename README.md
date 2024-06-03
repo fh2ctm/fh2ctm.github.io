@@ -12,5 +12,3 @@ The fonts I'm using for my website:
 
 - [Drafting Mono](https://indestructibletype.com/Drafting/)
 - [Commit Mono](https://commitmono.com)
-
-## Test Commit
