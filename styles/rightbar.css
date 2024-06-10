@@ -1,57 +1,57 @@
 .rightbar {
-    top: 0;
-    right: 0;
-    height: 100%; /* Full-height */
-    position: fixed; /* Fixed right bar */
-    z-index: 1; /* Stay on top */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    overflow-y: auto;
-    width: var(--bar-width);
-    padding-top: var(--document-margin);
-    text-align: right;
-    background-color: white;
+	top: 0;
+	right: 0;
+	height: 100%; /* Full-height */
+	position: fixed; /* Fixed right bar */
+	z-index: 1; /* Stay on top */
+	overflow-x: hidden; /* Disable horizontal scroll */
+	overflow-y: auto;
+	width: var(--bar-width);
+	padding-top: var(--document-margin);
+	text-align: right;
+	background-color: white;
 }
 
 .rightbar a,
 .rightbar span {
-    text-decoration: none;
-    color: darkgray;
-    display: block;
+	text-decoration: none;
+	color: darkgray;
+	display: block;
 }
 
 .rightbar span {
-    padding: var(--bar-item-vertical-padding) calc(0.9 * var(--document-margin));
-    font-size: 13pt;
-    font-weight: 500;
+	padding: var(--bar-item-vertical-padding) calc(0.9 * var(--document-margin));
+	font-size: 13pt;
+	font-weight: 500;
 }
 
 .rightbar a {
-    padding: var(--bar-item-vertical-padding) calc(1.2 * var(--document-margin))
-        var(--bar-item-vertical-padding) var(--document-margin);
-    font-size: 11pt;
-    font-weight: 300;
+	padding: var(--bar-item-vertical-padding) calc(1.2 * var(--document-margin))
+		var(--bar-item-vertical-padding) var(--document-margin);
+	font-size: 11pt;
+	font-weight: 300;
 }
 
 .rightbar a:hover {
-    color: #1e9a7c;
-    font-weight: 400;
+	color: #1e9a7c;
+	font-weight: 400;
 }
 
 .rightbar a:hover::before {
-    content: "-> ";
+	content: "-> ";
 }
 
 @media screen and (max-width: 360px) {
-    .rightbar {
-        visibility: hidden;
-    }
+	.rightbar {
+		visibility: hidden;
+	}
 }
 
 @media screen and (max-height: 450px) {
-    .rightbar {
-        padding-top: 15px;
-    }
-    .rightbar a {
-        font-size: 18px;
-    }
+	.rightbar {
+		padding-top: 15px;
+	}
+	.rightbar a {
+		font-size: 18px;
+	}
 }

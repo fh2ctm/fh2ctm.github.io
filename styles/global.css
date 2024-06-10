@@ -9,31 +9,31 @@
 
 /* Global Variables */
 :root {
-    --bar-item-vertical-padding: 6px;
-    --bar-width: 14em;
+	--bar-item-vertical-padding: 6px;
+	--bar-width: 14em;
 
-    --blockquote-vertical-padding: 1em;
-    --blockquote-horizontal-padding: 1.3em;
+	--blockquote-vertical-padding: 1em;
+	--blockquote-horizontal-padding: 1.3em;
 
-    --code-line-height: 1.5;
+	--code-line-height: 1.5;
 
-    --code-vertical-padding: 2px;
-    --code-horizontal-padding: 4px;
+	--code-vertical-padding: 2px;
+	--code-horizontal-padding: 4px;
 
-    --document-margin: 1.2em;
-    --document-font-size: 12pt;
+	--document-margin: 1.2em;
+	--document-font-size: 12pt;
 
-    --h1-top-margin: 1.5em;
+	--h1-top-margin: 1.5em;
 
-    --link-color: #1b8a6f;
-    --link-hover-color: #4aae96;
-    --link-hover-shadow-xshift: 0px;
-    --link-hover-shadow-yshift: 4px;
-    --link-hover-shadow-radius: 8px;
-    --link-hover-shadow-color: #bbe0d7;
+	--link-color: #1b8a6f;
+	--link-hover-color: #4aae96;
+	--link-hover-shadow-xshift: 0px;
+	--link-hover-shadow-yshift: 4px;
+	--link-hover-shadow-radius: 8px;
+	--link-hover-shadow-color: #bbe0d7;
 }
 
 body {
-    font-family: "Drafting Mono";
-    font-weight: normal;
+	font-family: "Drafting Mono";
+	font-weight: normal;
 }
