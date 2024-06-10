@@ -50,9 +50,9 @@
 }
 
 .document p > code,
-li > code,
-th > code,
-td > code {
+.document li > code,
+.document th > code,
+.document td > code {
 	padding: var(--code-vertical-padding) var(--code-horizontal-padding);
 	background: rgb(236, 236, 236);
 }
@@ -74,8 +74,8 @@ td > code {
 }
 
 .document table,
-td,
-th {
+.document td,
+.document th {
 	border: 0.6px solid darkgray;
 	padding: 4pt 7pt;
 }
