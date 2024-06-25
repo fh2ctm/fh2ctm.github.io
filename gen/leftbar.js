@@ -24,7 +24,7 @@ function Divider(text = "\u00A0") {
  * @returns {Element} Left bar.
  */
 function LeftBar() {
-	return NewNode("div", { class: "leftbar" });
+	return document.querySelector(".leftbar");
 }
 
 /**
@@ -46,15 +46,18 @@ function Link(path, text, selected = false) {
 export default function makeLeftBar() {
 	let filename = CurrentFilename();
 	let leftBar = LeftBar();
+	// add left bar signature
 	leftBar.appendChild(leftBarSignature);
+	// add divider
 	leftBar.appendChild(Divider());
+	// iterate category
 	Object.entries(pageCategory).forEach(([category, pages]) => {
 		leftBar.appendChild(Divider(category));
+		// iterate page
 		Object.entries(pages).forEach(([title, page]) => {
 			let pageDir = "/pages/" + category.toLowerCase() + "/" + title + ".html";
 			leftBar.appendChild(Link(pageDir, page, filename == title));
 		});
 		leftBar.appendChild(Divider());
 	});
-	document.body.appendChild(leftBar);
 }

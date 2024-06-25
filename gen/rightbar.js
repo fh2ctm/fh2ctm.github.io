@@ -5,9 +5,7 @@ import { NewNode } from "/gen/meta.js";
  * @returns {Element} Right bar.
  */
 function RightBar() {
-	return NewNode("div", {
-		class: "rightbar",
-	});
+	return document.querySelector(".rightbar");
 }
 
 /**
@@ -56,7 +54,6 @@ function makeRightBarWithSectionDividers(headingObj) {
 		}
 		rightbar.appendChild(Divider());
 	});
-	document.body.appendChild(rightbar);
 }
 
 /**
