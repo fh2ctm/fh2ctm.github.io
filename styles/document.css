@@ -11,80 +11,115 @@
 	margin-right: var(--document-margin);
 }
 
-.document h1 {
+h1 {
 	font-size: calc(var(--document-font-size) + 8pt);
+	font-weight: 700;
 }
 
-.document h1:not(:first-child) {
+h1:not(:first-child) {
 	margin-top: var(--h1-top-margin);
 }
 
-.document h2 {
+h1::before {
+	content: "# ";
+	color: darkgray;
+}
+
+h2 {
 	font-size: calc(var(--document-font-size) + 4pt);
 }
 
-.document h2::before {
-	content: "✢ ";
+h2::before {
+	content: "## ";
+	color: darkgray;
 }
 
-.document h3 {
+h2,
+h3 {
+	font-weight: 600;
+}
+
+h3::before {
+	content: "### ";
+	color: darkgray;
+}
+
+h4,
+h5,
+h6 {
+	font-weight: 500;
+}
+
+h4::before {
+	content: "* ";
+	color: darkgray;
+}
+
+h5::before {
+	content: "** ";
+	color: darkgray;
+}
+
+h6::before {
+	content: "*** ";
+	color: darkgray;
+}
+
+h3 {
 	font-size: calc(var(--document-font-size) + 2pt);
 }
 
-.document h4 {
+h4 {
 	font-size: calc(var(--document-font-size) + 1pt);
 }
 
-.document blockquote {
+blockquote {
 	font-style: italic;
 	font-size: calc(var(--document-font-size) - 1pt);
-	background-color: #e8f4f1;
-	padding: var(--blockquote-vertical-padding)
-		var(--blockquote-horizontal-padding);
+	background-color: var(--blockquote-background-color);
+	padding: var(--blockquote-vertical-padding) var(--blockquote-horizontal-padding);
 }
 
-.document code {
+code {
 	font-family: "Commit Mono";
 	line-height: var(--code-line-height);
 	font-size: calc(var(--document-font-size) - 2pt);
 }
 
-.document p > code,
-.document li > code,
-.document th > code,
-.document td > code {
+p>code,
+li>code,
+th>code,
+td>code {
 	padding: var(--code-vertical-padding) var(--code-horizontal-padding);
-	background: rgb(236, 236, 236);
+	background: var(--code-line-background);
 }
 
-.document p a[href] {
+p a[href] {
 	color: var(--link-color);
 }
 
-.document p a[href]:hover {
+p a[href]:hover {
 	color: var(--link-hover-color);
-	text-shadow: var(--link-hover-shadow-xshift) var(--link-hover-shadow-yshift)
-		var(--link-hover-shadow-radius) var(--link-hover-shadow-color);
+	text-shadow: var(--link-hover-shadow-xshift) var(--link-hover-shadow-yshift) var(--link-hover-shadow-radius) var(--link-hover-shadow-color);
 }
 
-.document table {
+table {
 	table-layout: fixed;
 	border-collapse: collapse;
-	font-family: "Iosevka";
 }
 
-.document table,
-.document td,
-.document th {
+table,
+td,
+th {
 	border: 0.6px solid darkgray;
 	padding: 4pt 7pt;
 }
 
-.document td {
+td {
 	text-align: left;
 }
 
-.document thead th {
+thead th {
 	font-weight: 600;
 	width: fit-content;
 }

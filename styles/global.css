@@ -1,6 +1,5 @@
 @import url("fonts/drafting-mono/reg.css");
 @import url("fonts/commit-mono/reg.css");
-@import url("fonts/iosevka/reg.css");
 
 @import url("document.css");
 @import url("leftbar.css");
@@ -14,9 +13,11 @@
 
 	--blockquote-vertical-padding: 1em;
 	--blockquote-horizontal-padding: 1.3em;
+	--blockquote-background-color: #e8f4f1;
 
+	/* Inline code */
 	--code-line-height: 1.5;
-
+	--code-line-background: rgb(236, 236, 236);
 	--code-vertical-padding: 2px;
 	--code-horizontal-padding: 4px;
 
@@ -33,6 +34,7 @@
 	--link-hover-shadow-color: #bbe0d7;
 }
 
+/* default font for page */
 body {
 	font-family: "Drafting Mono";
 	font-weight: normal;
