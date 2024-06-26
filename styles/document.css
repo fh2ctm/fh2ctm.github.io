@@ -12,7 +12,7 @@
 }
 
 h1 {
-	font-size: calc(var(--document-font-size) + 8pt);
+	font-size: calc(var(--document-font-size) + 6pt);
 	font-weight: 550;
 }
 
@@ -39,6 +39,10 @@ h3 {
 	font-weight: 500;
 }
 
+h3 {
+	font-size: calc(var(--document-font-size) + 2pt);
+}
+
 h3::before {
 	content: "### ";
 	color: darkgray;
@@ -51,17 +55,17 @@ h6 {
 }
 
 h4::before {
-	content: "* ";
+	content: "/ ";
 	color: darkgray;
 }
 
 h5::before {
-	content: "** ";
+	content: "// ";
 	color: darkgray;
 }
 
 h6::before {
-	content: "*** ";
+	content: "/// ";
 	color: darkgray;
 }
 
