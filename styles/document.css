@@ -13,7 +13,7 @@
 
 h1 {
 	font-size: calc(var(--document-font-size) + 8pt);
-	font-weight: 700;
+	font-weight: 550;
 }
 
 h1:not(:first-child) {
@@ -122,4 +122,24 @@ td {
 thead th {
 	font-weight: 600;
 	width: fit-content;
+}
+
+@media (max-width: 1000px) {
+	.rightbar {
+		display: none;
+	}
+
+	.document {
+		margin-right: var(--document-margin);
+	}
+}
+
+@media (max-width: 800px) {
+	.leftbar {
+		display: none;
+	}
+
+	.document {
+		margin-left: var(--document-margin);
+	}
 }

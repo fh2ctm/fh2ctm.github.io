@@ -3,10 +3,10 @@
 
 @import url("document.css");
 @import url("leftbar.css");
-@import url("hl.css");
 @import url("rightbar.css");
+@import url("hl.css");
 
-/* Global Variables */
+/* Global variables */
 :root {
 	--bar-item-vertical-padding: 6px;
 	--bar-width: 14em;
@@ -28,13 +28,13 @@
 
 	--link-color: #1b8a6f;
 	--link-hover-color: #4aae96;
+	--link-hover-shadow-color: #bbe0d7;
 	--link-hover-shadow-xshift: 0px;
 	--link-hover-shadow-yshift: 4px;
 	--link-hover-shadow-radius: 8px;
-	--link-hover-shadow-color: #bbe0d7;
 }
 
-/* default font for page */
+/* Default font for page */
 body {
 	font-family: "Drafting Mono";
 	font-weight: normal;

@@ -1,10 +1,10 @@
 .leftbar {
 	top: 0;
 	left: 0;
-	height: 100%; /* Full-height */
-	position: fixed; /* Fixed left bar */
-	z-index: 1; /* Stay on top */
-	overflow-x: hidden; /* Disable horizontal scroll */
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+	overflow-x: hidden;
 	overflow-y: auto;
 	width: var(--bar-width);
 	padding-top: var(--document-margin);
@@ -25,7 +25,6 @@
 .leftbar a[signature]:hover {
 	color: #1e9a7c;
 	background-color: #ffffff;
-	font-weight: 600;
 	text-decoration: underline;
 }
 
@@ -54,8 +53,10 @@ footer {
 	left: 0;
 	height: auto;
 	position: absolute;
-	z-index: 2; /* Stay on top */
-	overflow-x: hidden; /* Disable horizontal scroll */
+	z-index: 2;
+	/* Stay on top */
+	overflow-x: hidden;
+	/* Disable horizontal scroll */
 	overflow-y: hidden;
 	padding-left: var(--document-margin);
 	padding-bottom: var(--document-margin);
@@ -77,6 +78,7 @@ footer a:hover {
 	.leftbar {
 		padding-top: 15px;
 	}
+
 	.leftbar a {
 		font-size: 18px;
 	}
