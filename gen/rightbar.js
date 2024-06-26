@@ -21,17 +21,29 @@ function Divider(text = "\u00A0") {
  * <a href="#id">text</a>
  * @param {string} id Heading ID to link to.
  * @param {*} text Inner text.
+ * @param {boolean} h1 Whether this is an <h1> heading.
  * @returns {Element} Link.
  */
-function Link(id, text) {
+function Link(id, text, h1 = false) {
 	const localPath = "#" + id;
-	return NewNode(
-		"a",
-		{
-			href: localPath,
-		},
-		text,
-	);
+	if (h1) {
+		return NewNode(
+			"a",
+			{
+				href: localPath,
+				class: "h1",
+			},
+			text,
+		);
+	} else {
+		return NewNode(
+			"a",
+			{
+				href: localPath,
+			},
+			text,
+		);
+	}
 }
 
 /**
@@ -61,7 +73,7 @@ function makeRightBarWithSectionDividers(headingObj) {
  * @returns {NodeListOf<Element>} A list of headings.
  */
 function AllHeadings() {
-	return document.body.querySelectorAll("h1, h2[id]");
+	return document.body.querySelectorAll("h1[id], h2[id]");
 }
 
 /**
@@ -71,17 +83,17 @@ function makeRightBarWithToc() {
 	let rightbar = RightBar();
 	let seenH1 = false;
 	const headings = AllHeadings();
+	console.log("Found", headings.length, "headings");
 	headings.forEach((heading) => {
-		if (heading.tagName == "h1") {
+		let isH1 = (heading.tagName.toLowerCase() == "h1");
+		if (isH1) {
 			if (seenH1) {
 				rightbar.appendChild(Divider());
 			} else {
 				seenH1 = true;
 			}
-			rightbar.appendChild(Divider(heading.innerText));
-		} else {
-			rightbar.appendChild(Link(heading.id, heading.innerText));
 		}
+		rightbar.appendChild(Link(heading.id, heading.id, isH1));
 	});
 }
 
@@ -93,6 +105,7 @@ export default function makeRightBar(obj = null) {
 	if (obj) {
 		makeRightBarWithSectionDividers(obj);
 	} else {
+		console.log("Making right bar with table of contents.");
 		makeRightBarWithToc();
 	}
 }

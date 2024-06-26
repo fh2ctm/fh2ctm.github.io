@@ -19,11 +19,11 @@
 	color: white;
 	padding: var(--bar-item-vertical-padding) calc(0.85 * var(--document-margin));
 	font-size: 13pt;
-	font-weight: bold;
+	font-weight: 599;
 }
 
 .leftbar a[signature] {
-	font-family: "Iosevka";
+	font-family: "Drafting Mono";
 }
 
 .leftbar a[signature]:hover {

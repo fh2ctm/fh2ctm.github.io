@@ -1,0 +1,13 @@
+@font-face {
+	font-family: "Drafting Mono";
+	font-style: normal;
+	src: url("Drafting-wght.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Drafting Mono';
+	font-style: italic;
+	src: url("Drafting-Italic-wght.woff2") format("woff2");
+	font-display: swap;
+}

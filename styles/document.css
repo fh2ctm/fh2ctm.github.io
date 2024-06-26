@@ -5,10 +5,7 @@
 	font-size: var(--document-font-size);
 	overflow-x: hidden;
 	overflow-y: auto;
-}
-
-.document ::before {
-	margin-right: var(--heading-symbol-spacing);
+	font-family: "Drafting Mono";
 }
 
 .document[no-rightbar] {
@@ -16,7 +13,8 @@
 }
 
 h1 {
-	font-size: calc(var(--document-font-size) + 6pt);
+	font-size: calc(var(--document-font-size) + 3pt);
+	font-weight: 599;
 }
 
 h1:not(:first-child) {
@@ -24,12 +22,13 @@ h1:not(:first-child) {
 }
 
 h1::before {
-	content: "#";
+	content: "# ";
 	color: darkgray;
 }
 
 h2 {
-	font-size: calc(var(--document-font-size) + 4pt);
+	font-size: calc(var(--document-font-size) + 2pt);
+	font-weight: 550;
 }
 
 h2::before {
@@ -38,7 +37,7 @@ h2::before {
 }
 
 h3 {
-	font-size: calc(var(--document-font-size) + 2pt);
+	font-size: calc(var(--document-font-size) + 1pt);
 }
 
 h3::before {
