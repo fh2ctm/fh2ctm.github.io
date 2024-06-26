@@ -7,7 +7,7 @@ const leftBarSignature = NewNode(
 		signature: "",
 		href: "/index.html",
 	},
-	"◊ rexylic",
+	"rexylic",
 );
 
 /**

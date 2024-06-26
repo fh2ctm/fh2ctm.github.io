@@ -22,6 +22,10 @@
 	font-weight: bold;
 }
 
+.leftbar a[signature] {
+	font-family: "Iosevka";
+}
+
 .leftbar a[signature]:hover {
 	color: #1e9a7c;
 	background-color: #ffffff;
@@ -53,14 +57,14 @@ footer {
 	bottom: 0;
 	left: 0;
 	height: auto;
-	position: absolute;
+	position: fixed;
 	z-index: 2;
 	overflow-x: hidden;
 	overflow-y: hidden;
 	padding-left: var(--document-margin);
 	padding-bottom: var(--document-margin);
-	color: transparent;
 	font-size: 10px;
+	color: white;
 }
 
 footer a {
@@ -70,7 +74,7 @@ footer a {
 }
 
 footer a:hover {
-	color: white;
+	text-decoration: underline;
 }
 
 @media screen and (max-height: 450px) {
