@@ -19,13 +19,16 @@
 	color: white;
 	padding: var(--bar-item-vertical-padding) calc(0.85 * var(--document-margin));
 	font-size: 13pt;
-	font-weight: 500;
+	font-variation-settings: "wght" 650;
 }
 
 .leftbar a[signature]:hover {
 	color: #1e9a7c;
 	background-color: #ffffff;
-	text-decoration: underline;
+}
+
+.leftbar a[signature]:hover::after {
+	content: ".com";
 }
 
 .leftbar a:not([signature]) {
