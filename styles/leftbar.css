@@ -9,7 +9,7 @@
 	width: var(--bar-width);
 	padding-top: var(--document-margin);
 	text-align: left;
-	background-color: #1e9a7c;
+	background-color: var(--leftbar-background-color);
 }
 
 .leftbar span,
@@ -45,7 +45,7 @@
 }
 
 .leftbar a:not([signature]):hover::after {
-	content: " <-";
+	content: " <";
 }
 
 footer {

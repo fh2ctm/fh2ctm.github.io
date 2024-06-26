@@ -41,5 +41,5 @@
 }
 
 .rightbar a:hover::before {
-	content: "-> ";
+	content: "> ";
 }
