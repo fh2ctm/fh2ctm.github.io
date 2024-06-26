@@ -6,6 +6,7 @@
 }
 
 @font-face {
+	font-family: 'Drafting Mono';
 	font-style: italic;
 	src: url("Drafting-Italic-wght.woff2") format("woff2-variations");
 	font-display: swap;
