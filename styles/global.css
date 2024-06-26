@@ -1,5 +1,5 @@
-@import url("fonts/drafting-mono/reg.css");
-@import url("fonts/commit-mono/reg.css");
+@import url("fonts/iosevka/reg.css");
+@import url("fonts/fira-sans-condensed/reg.css");
 
 @import url("document.css");
 @import url("leftbar.css");
@@ -9,7 +9,7 @@
 /* Global variables */
 :root {
 	--bar-item-vertical-padding: 6px;
-	--bar-width: 14em;
+	--bar-width: 10em;
 
 	--blockquote-vertical-padding: 1em;
 	--blockquote-horizontal-padding: 1.3em;
@@ -26,6 +26,8 @@
 
 	--h1-top-margin: 1.5em;
 
+	--heading-symbol-spacing: 0.3em;
+
 	--leftbar-background-color: #1e9a7c;
 
 	--link-color: #1b8a6f;
@@ -38,6 +40,6 @@
 
 /* Default font for page */
 body {
-	font-family: "Drafting Mono";
+	font-family: "Fira Sans Condensed";
 	font-weight: normal;
 }

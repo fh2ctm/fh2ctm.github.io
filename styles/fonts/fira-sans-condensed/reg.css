@@ -1,0 +1,31 @@
+@font-face {
+	font-family: "Fira Sans Condensed";
+	src: url("FiraSansCondensed-Regular.woff2") format("woff2");
+	font-display: swap;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Fira Sans Condensed";
+	src: url("FiraSansCondensed-SemiBold.woff2") format("woff2");
+	font-display: swap;
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Fira Sans Condensed";
+	src: url("FiraSansCondensed-Italic.woff2") format("woff2");
+	font-display: swap;
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Fira Sans Condensed";
+	src: url("FiraSansCondensed-SemiBoldItalic.woff2") format("woff2");
+	font-display: swap;
+	font-weight: bold;
+	font-style: italic;
+}

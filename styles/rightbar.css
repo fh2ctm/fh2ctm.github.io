@@ -26,18 +26,16 @@
 .rightbar span {
 	padding: var(--bar-item-vertical-padding) calc(0.9 * var(--document-margin));
 	font-size: 13pt;
-	font-weight: 500;
+	font-weight: bold;
 }
 
 .rightbar a {
 	padding: var(--bar-item-vertical-padding) calc(1.2 * var(--document-margin)) var(--bar-item-vertical-padding) var(--document-margin);
 	font-size: 11pt;
-	font-weight: 300;
 }
 
 .rightbar a:hover {
 	color: #1e9a7c;
-	font-weight: 400;
 }
 
 .rightbar a:hover::before {

@@ -7,13 +7,16 @@
 	overflow-y: auto;
 }
 
+.document ::before {
+	margin-right: var(--heading-symbol-spacing);
+}
+
 .document[no-rightbar] {
 	margin-right: var(--document-margin);
 }
 
 h1 {
 	font-size: calc(var(--document-font-size) + 6pt);
-	font-weight: 590;
 }
 
 h1:not(:first-child) {
@@ -21,13 +24,12 @@ h1:not(:first-child) {
 }
 
 h1::before {
-	content: "# ";
+	content: "#";
 	color: darkgray;
 }
 
 h2 {
 	font-size: calc(var(--document-font-size) + 4pt);
-	font-weight: 560;
 }
 
 h2::before {
@@ -37,32 +39,29 @@ h2::before {
 
 h3 {
 	font-size: calc(var(--document-font-size) + 2pt);
-	font-weight: 530;
 }
 
 h3::before {
 	content: "### ";
+	font-size: smaller;
 	color: darkgray;
-}
-
-h4,
-h5,
-h6 {
-	font-weight: 500;
 }
 
 h4::before {
 	content: "/ ";
+	font-size: smaller;
 	color: darkgray;
 }
 
 h5::before {
 	content: "// ";
+	font-size: smaller;
 	color: darkgray;
 }
 
 h6::before {
 	content: "/// ";
+	font-size: smaller;
 	color: darkgray;
 }
 
@@ -79,10 +78,11 @@ blockquote {
 	font-size: calc(var(--document-font-size) - 1pt);
 	background-color: var(--blockquote-background-color);
 	padding: var(--blockquote-vertical-padding) var(--blockquote-horizontal-padding);
+	margin: 0;
 }
 
 code {
-	font-family: "Commit Mono";
+	font-family: "Iosevka";
 	line-height: var(--code-line-height);
 	font-size: calc(var(--document-font-size) - 2pt);
 }
@@ -121,7 +121,7 @@ td {
 }
 
 thead th {
-	font-weight: 600;
+	font-weight: bold;
 	width: fit-content;
 }
 
