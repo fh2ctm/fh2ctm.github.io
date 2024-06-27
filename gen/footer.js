@@ -9,7 +9,7 @@ const licenseLink = NewNode(
 		target: "_blank",
 		rel: "license noopener noreferrer",
 	},
-	"Licenced under CC BY-NC-ND 4.0",
+	"CC BY-NC-ND 4.0",
 );
 
 export default function makeFooter() {

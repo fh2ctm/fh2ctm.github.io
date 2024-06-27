@@ -1,20 +1,35 @@
 .document {
-	margin-left: calc(var(--document-margin) + var(--bar-width));
-	margin-right: calc(var(--document-margin) + var(--bar-width));
-	padding: var(--document-margin);
+	margin-left: calc(var(--document-margin) + var(--leftbar-width));
+	margin-right: calc(var(--document-margin) + var(--rightbar-width));
+	margin-top: var(--document-margin);
+	margin-bottom: var(--document-margin);
 	font-size: var(--document-font-size);
 	overflow-x: hidden;
 	overflow-y: auto;
-	font-family: "Drafting Mono";
 }
 
 .document[no-rightbar] {
 	margin-right: var(--document-margin);
 }
 
+.document[no-rightbar] {
+	margin-right: var(--document-margin);
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 600;
+}
+
+h4,
+h5,
+h6 {
+	font-weight: 500;
+}
+
 h1 {
-	font-size: calc(var(--document-font-size) + 3pt);
-	font-weight: 599;
+	font-size: calc(var(--document-font-size) + 6pt);
 }
 
 h1:not(:first-child) {
@@ -27,8 +42,7 @@ h1::before {
 }
 
 h2 {
-	font-size: calc(var(--document-font-size) + 2pt);
-	font-weight: 550;
+	font-size: calc(var(--document-font-size) + 4pt);
 }
 
 h2::before {
@@ -37,30 +51,26 @@ h2::before {
 }
 
 h3 {
-	font-size: calc(var(--document-font-size) + 1pt);
+	font-size: calc(var(--document-font-size) + 2pt);
 }
 
 h3::before {
 	content: "### ";
-	font-size: smaller;
 	color: darkgray;
 }
 
 h4::before {
 	content: "/ ";
-	font-size: smaller;
 	color: darkgray;
 }
 
 h5::before {
 	content: "// ";
-	font-size: smaller;
 	color: darkgray;
 }
 
 h6::before {
 	content: "/// ";
-	font-size: smaller;
 	color: darkgray;
 }
 
@@ -78,12 +88,6 @@ blockquote {
 	background-color: var(--blockquote-background-color);
 	padding: var(--blockquote-vertical-padding) var(--blockquote-horizontal-padding);
 	margin: 0;
-}
-
-code {
-	font-family: "Iosevka";
-	line-height: var(--code-line-height);
-	font-size: calc(var(--document-font-size) - 2pt);
 }
 
 p>code,
