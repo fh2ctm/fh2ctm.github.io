@@ -1,72 +1,72 @@
 .leftbar {
-	top: 0;
-	left: 0;
-	height: 100%;
-	position: fixed;
-	z-index: 1;
-	overflow-x: hidden;
-	overflow-y: auto;
-	width: var(--leftbar-width);
-	padding-top: var(--document-margin);
-	padding-bottom: var(--document-margin);
-	text-align: left;
-	background-color: var(--leftbar-background-color);
-	font-size: var(--bar-item-font-size);
+  top: 0;
+  left: 0;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: var(--leftbar-width);
+  padding-top: var(--document-margin);
+  padding-bottom: var(--document-margin);
+  text-align: left;
+  background-color: var(--leftbar-background-color);
+  font-size: var(--bar-item-font-size);
 }
 
 .leftbar span,
 .leftbar a[signature] {
-	text-decoration: none;
-	display: block;
-	color: white;
-	padding: var(--bar-item-vertical-padding) calc(0.85 * var(--document-margin));
-	font-size: var(--bar-heading-font-size);
-	font-weight: 600;
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: var(--bar-item-vertical-padding) calc(0.85 * var(--document-margin));
+  font-size: var(--bar-heading-font-size);
+  font-weight: 600;
 }
 
 .leftbar a[signature] {
-	font-family: "Drafting Mono";
-	font-weight: bold;
+  font-family: "Drafting Mono";
+  font-weight: bold;
 }
 
 .leftbar a[signature]:hover {
-	color: #1e9a7c;
-	background-color: #ffffff;
+  color: #1e9a7c;
+  background-color: #ffffff;
 }
 
 .leftbar a:not([signature]) {
-	padding: var(--bar-item-vertical-padding) var(--document-margin);
-	text-decoration: none;
-	color: #ffffff;
-	display: block;
+  padding: var(--bar-item-vertical-padding) var(--document-margin);
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
 }
 
 .leftbar a:not([signature]):hover,
 .leftbar a[selected] {
-	color: #1e9a7c;
-	background-color: #ffffff;
+  color: #1e9a7c;
+  background-color: #ffffff;
 }
 
 footer {
-	bottom: 0;
-	left: 0;
-	height: auto;
-	position: fixed;
-	z-index: 2;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	padding-left: var(--document-margin);
-	padding-bottom: var(--document-margin);
-	font-size: 10px;
-	color: white;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  position: fixed;
+  z-index: 2;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-left: var(--document-margin);
+  padding-bottom: var(--document-margin);
+  font-size: 10px;
+  color: white;
 }
 
 footer a {
-	color: unset;
-	text-decoration: unset;
-	display: block;
+  color: unset;
+  text-decoration: unset;
+  display: block;
 }
 
 footer a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }

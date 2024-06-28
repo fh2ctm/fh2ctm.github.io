@@ -2,12 +2,12 @@ import { NewNode, CurrentFilename } from "/gen/meta.js";
 import pageCategory from "/data/site-dir.js";
 
 const leftBarSignature = NewNode(
-	"a",
-	{
-		signature: "",
-		href: "/index.html",
-	},
-	"Rex Fang",
+  "a",
+  {
+    signature: "",
+    href: "/index.html",
+  },
+  "Rex Fang",
 );
 
 /**
@@ -16,7 +16,7 @@ const leftBarSignature = NewNode(
  * @returns {Element} Divider.
  */
 function Divider(text = "\u00A0") {
-	return NewNode("span", {}, text);
+  return NewNode("span", {}, text);
 }
 
 /**
@@ -24,7 +24,7 @@ function Divider(text = "\u00A0") {
  * @returns {Element} Left bar.
  */
 function LeftBar() {
-	return document.querySelector(".leftbar");
+  return document.querySelector(".leftbar");
 }
 
 /**
@@ -35,29 +35,29 @@ function LeftBar() {
  * @returns {Element} Link.
  */
 function Link(path, text, selected = false) {
-	let link = NewNode("a", { href: path }, text);
-	selected && link.setAttribute("selected", "");
-	return link;
+  let link = NewNode("a", { href: path }, text);
+  selected && link.setAttribute("selected", "");
+  return link;
 }
 
 /**
  * Make a left bar.
  */
 export default function makeLeftBar() {
-	let filename = CurrentFilename();
-	let leftBar = LeftBar();
-	// add left bar signature
-	leftBar.appendChild(leftBarSignature);
-	// add divider
-	leftBar.appendChild(Divider());
-	// iterate category
-	Object.entries(pageCategory).forEach(([category, pages]) => {
-		leftBar.appendChild(Divider(category));
-		// iterate page
-		Object.entries(pages).forEach(([title, page]) => {
-			let pageDir = "/pages/" + category.toLowerCase() + "/" + title + ".html";
-			leftBar.appendChild(Link(pageDir, page, filename == title));
-		});
-		leftBar.appendChild(Divider());
-	});
+  let filename = CurrentFilename();
+  let leftBar = LeftBar();
+  // add left bar signature
+  leftBar.appendChild(leftBarSignature);
+  // add divider
+  leftBar.appendChild(Divider());
+  // iterate category
+  Object.entries(pageCategory).forEach(([category, pages]) => {
+    leftBar.appendChild(Divider(category));
+    // iterate page
+    Object.entries(pages).forEach(([title, page]) => {
+      let pageDir = "/pages/" + category.toLowerCase() + "/" + title + ".html";
+      leftBar.appendChild(Link(pageDir, page, filename == title));
+    });
+    leftBar.appendChild(Divider());
+  });
 }

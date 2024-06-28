@@ -1,40 +1,40 @@
 .rightbar {
-	top: 0;
-	right: 0;
-	height: 100%;
-	/* Full-height */
-	position: fixed;
-	/* Fixed right bar */
-	z-index: 1;
-	/* Stay on top */
-	overflow-x: hidden;
-	/* Disable horizontal scroll */
-	overflow-y: scroll;
-	margin-top: var(--document-margin);
-	width: var(--rightbar-width);
-	text-align: right;
-	background-color: white;
-	font-size: var(--bar-item-font-size);
+  top: 0;
+  right: 0;
+  height: 100%;
+  /* Full-height */
+  position: fixed;
+  /* Fixed right bar */
+  z-index: 1;
+  /* Stay on top */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  overflow-y: scroll;
+  margin-top: var(--document-margin);
+  width: var(--rightbar-width);
+  text-align: right;
+  background-color: white;
+  font-size: var(--bar-item-font-size);
 }
 
 .rightbar a,
 .rightbar span {
-	text-decoration: none;
-	color: darkgray;
-	display: block;
+  text-decoration: none;
+  color: darkgray;
+  display: block;
 }
 
 .rightbar span,
 .rightbar a.h1 {
-	padding: var(--bar-item-vertical-padding) calc(0.9 * var(--document-margin));
-	font-weight: 600;
-	font-size: var(--bar-heading-font-size);
+  padding: var(--bar-item-vertical-padding) calc(0.9 * var(--document-margin));
+  font-weight: 600;
+  font-size: var(--bar-heading-font-size);
 }
 
 .rightbar a {
-	padding: var(--bar-item-vertical-padding) calc(1.2 * var(--document-margin)) var(--bar-item-vertical-padding) var(--document-margin);
+  padding: var(--bar-item-vertical-padding) calc(1.2 * var(--document-margin)) var(--bar-item-vertical-padding) var(--document-margin);
 }
 
 .rightbar :hover {
-	color: #1e9a7c;
+  color: #1e9a7c;
 }

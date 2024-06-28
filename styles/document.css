@@ -1,149 +1,149 @@
 .document {
-	margin-left: calc(var(--document-margin) + var(--leftbar-width));
-	margin-right: calc(var(--document-margin) + var(--rightbar-width));
-	margin-top: var(--document-margin);
-	margin-bottom: var(--document-margin);
-	font-size: var(--document-font-size);
-	overflow-x: hidden;
-	overflow-y: auto;
+  margin-left: calc(var(--document-margin) + var(--leftbar-width));
+  margin-right: calc(var(--document-margin) + var(--rightbar-width));
+  margin-top: var(--document-margin);
+  margin-bottom: var(--document-margin);
+  font-size: var(--document-font-size);
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .document[no-rightbar] {
-	margin-right: var(--document-margin);
+  margin-right: var(--document-margin);
 }
 
 .document[no-rightbar] {
-	margin-right: var(--document-margin);
+  margin-right: var(--document-margin);
 }
 
 h1,
 h2,
 h3 {
-	font-weight: 600;
+  font-weight: 600;
 }
 
 h4,
 h5,
 h6 {
-	font-weight: 500;
+  font-weight: 500;
 }
 
 h1 {
-	font-size: calc(var(--document-font-size) + 6pt);
+  font-size: calc(var(--document-font-size) + 6pt);
 }
 
 h1:not(:first-child) {
-	margin-top: var(--h1-top-margin);
+  margin-top: var(--h1-top-margin);
 }
 
 h1::before {
-	content: "# ";
-	color: darkgray;
+  content: "# ";
+  color: darkgray;
 }
 
 h2 {
-	font-size: calc(var(--document-font-size) + 4pt);
+  font-size: calc(var(--document-font-size) + 4pt);
 }
 
 h2::before {
-	content: "## ";
-	color: darkgray;
+  content: "## ";
+  color: darkgray;
 }
 
 h3 {
-	font-size: calc(var(--document-font-size) + 2pt);
+  font-size: calc(var(--document-font-size) + 2pt);
 }
 
 h3::before {
-	content: "### ";
-	color: darkgray;
+  content: "### ";
+  color: darkgray;
 }
 
 h4::before {
-	content: "/ ";
-	color: darkgray;
+  content: "/ ";
+  color: darkgray;
 }
 
 h5::before {
-	content: "// ";
-	color: darkgray;
+  content: "// ";
+  color: darkgray;
 }
 
 h6::before {
-	content: "/// ";
-	color: darkgray;
+  content: "/// ";
+  color: darkgray;
 }
 
 h3 {
-	font-size: calc(var(--document-font-size) + 2pt);
+  font-size: calc(var(--document-font-size) + 2pt);
 }
 
 h4 {
-	font-size: calc(var(--document-font-size) + 1pt);
+  font-size: calc(var(--document-font-size) + 1pt);
 }
 
 blockquote {
-	font-style: italic;
-	font-size: calc(var(--document-font-size) - 1pt);
-	background-color: var(--blockquote-background-color);
-	padding: var(--blockquote-vertical-padding) var(--blockquote-horizontal-padding);
-	margin: 0;
+  font-style: italic;
+  font-size: calc(var(--document-font-size) - 1pt);
+  background-color: var(--blockquote-background-color);
+  padding: var(--blockquote-vertical-padding) var(--blockquote-horizontal-padding);
+  margin: 0;
 }
 
 p>code,
 li>code,
 th>code,
 td>code {
-	padding: var(--code-vertical-padding) var(--code-horizontal-padding);
-	background: var(--code-line-background);
+  padding: var(--code-vertical-padding) var(--code-horizontal-padding);
+  background: var(--code-line-background);
 }
 
 p a[href] {
-	color: var(--link-color);
+  color: var(--link-color);
 }
 
 p a[href]:hover {
-	color: var(--link-hover-color);
-	text-shadow: var(--link-hover-shadow-xshift) var(--link-hover-shadow-yshift) var(--link-hover-shadow-radius) var(--link-hover-shadow-color);
+  color: var(--link-hover-color);
+  text-shadow: var(--link-hover-shadow-xshift) var(--link-hover-shadow-yshift) var(--link-hover-shadow-radius) var(--link-hover-shadow-color);
 }
 
 table {
-	table-layout: fixed;
-	border-collapse: collapse;
+  table-layout: fixed;
+  border-collapse: collapse;
 }
 
 table,
 td,
 th {
-	border: 0.6px solid darkgray;
-	padding: 4pt 7pt;
+  border: 0.6px solid darkgray;
+  padding: 4pt 7pt;
 }
 
 td {
-	text-align: left;
+  text-align: left;
 }
 
 thead th {
-	font-weight: bold;
-	width: fit-content;
+  font-weight: bold;
+  width: fit-content;
 }
 
 @media (max-width: 1000px) {
-	.rightbar {
-		display: none;
-	}
+  .rightbar {
+    display: none;
+  }
 
-	.document {
-		margin-right: var(--document-margin);
-	}
+  .document {
+    margin-right: var(--document-margin);
+  }
 }
 
 @media (max-width: 800px) {
-	.leftbar {
-		display: none;
-	}
+  .leftbar {
+    display: none;
+  }
 
-	.document {
-		margin-left: var(--document-margin);
-	}
+  .document {
+    margin-left: var(--document-margin);
+  }
 }

@@ -2,152 +2,152 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="/styles/global.css" />
-	<link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
-	<meta charset="utf8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title filename="qeerty">QÉERTY Keyboard Layout</title>
+  <link rel="stylesheet" href="/styles/global.css" />
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+  <meta charset="utf8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title filename="qeerty">QÉERTY Keyboard Layout</title>
 </head>
 
 <body>
-	<script type="module" src="/gen/body.js"></script>
-	<nav class="leftbar"></nav>
-	<nav class="rightbar"></nav>
-	<div class="document">
-		<p>I've made a keyboard layout called "QÉERTY".</p>
+  <script type="module" src="/gen/body.js"></script>
+  <nav class="leftbar"></nav>
+  <nav class="rightbar"></nav>
+  <div class="document">
+    <p>I've made a keyboard layout called "QÉERTY".</p>
 
-		<h1 id="Current Maps">Current French keyboard layouts</h1>
+    <h1 id="Current Maps">Current French keyboard layouts</h1>
 
-		I don't like any of them. Here's why.
+    I don't like any of them. Here's why.
 
-		<h2 id="AZERTY">AZERTY</h2>
-		<p>Just can't get used to it.</p>
+    <h2 id="AZERTY">AZERTY</h2>
+    <p>Just can't get used to it.</p>
 
-		<h2 id="FRCA">French (Canada)</h2>
-		<p>
-			Microsoft has a input layout that is just called "French (Canada)". As
-			one can see, not misleading at all.
-		</p>
-		<p>
-			Umm.. there's a cedilla modifier key which only gets used with the
-			letter <code>c</code>. Absolutely pointless and ridiculous.
-		</p>
+    <h2 id="FRCA">French (Canada)</h2>
+    <p>
+      Microsoft has a input layout that is just called "French (Canada)". As
+      one can see, not misleading at all.
+    </p>
+    <p>
+      Umm.. there's a cedilla modifier key which only gets used with the
+      letter <code>c</code>. Absolutely pointless and ridiculous.
+    </p>
 
-		<h2 id="CMS">Canadian multilingual standard</h2>
-		<p>
-			Decent, but WHY do I have to use RIGHT CONTROL key if I want to type the
-			ligature <code>oe</code>? That's literally the only reason why you have
-			a right control layer?! No sane human being would anticipate using
-			<code>ctrl</code> to access a whole new layer.
-		</p>
+    <h2 id="CMS">Canadian multilingual standard</h2>
+    <p>
+      Decent, but WHY do I have to use RIGHT CONTROL key if I want to type the
+      ligature <code>oe</code>? That's literally the only reason why you have
+      a right control layer?! No sane human being would anticipate using
+      <code>ctrl</code> to access a whole new layer.
+    </p>
 
-		<h2 id="BÉPO">BÉPO</h2>
+    <h2 id="BÉPO">BÉPO</h2>
 
-		<p>You have punctuations in the <em>middle</em> of the keyboard.</p>
+    <p>You have punctuations in the <em>middle</em> of the keyboard.</p>
 
-		<h1 id="Goal">Goal</h1>
+    <h1 id="Goal">Goal</h1>
 
-		<p>
-			The goal is to create a keyboard layout that is simple to learn,
-			structural, and as close to the most common ANSI QWERTY as possible.
-		</p>
+    <p>
+      The goal is to create a keyboard layout that is simple to learn,
+      structural, and as close to the most common ANSI QWERTY as possible.
+    </p>
 
-		<h2 id="Compared to QWERTY">Differences from ANSI QWERTY</h2>
+    <h2 id="Compared to QWERTY">Differences from ANSI QWERTY</h2>
 
-		<p>There are only 3 keys that are different with ANSI QWERTY:</p>
-		<ol>
-			<li>The <code>W</code> key</li>
-			<li>The apostrophe <code>'</code> key</li>
-			<li>The grave <code>`</code> key</li>
-		</ol>
-		<p>In more detail,</p>
-		<table>
-			<thead>
-				<tr>
-					<th scope="col">Original</th>
-					<th scope="col">New</th>
-					<th scope="col">New under <code>shift</code></th>
-					<th scope="col">New under <code>alt</code></th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr id="w">
-					<td>double vé <code>w</code></td>
-					<td>e accent aigu <code>é</code></td>
-					<td>e accent aigu <code>É</code></td>
-					<td>none</td>
-				</tr>
-				<tr id="apostrophe">
-					<td>apostrophe <code>'</code></td>
-					<td>accent circonflexe <code>^</code></td>
-					<td>accent tréma <code>¨</code></td>
-					<td>none</td>
-				</tr>
-				<tr id="grave">
-					<td>grave <code>`</code></td>
-					<td>accent grave <code>`</code></td>
-					<td>apostrophe <code>'</code></td>
-					<td>guillemet anglais double <code>"</code></td>
-				</tr>
-			</tbody>
-		</table>
-		<p>
-			the three accents (<code>`</code>, <code>^</code>, and <code>¨</code>)
-			are
-			<a href="https://en.wikipedia.org/wiki/Dead_key#Electronic_keyboards">dead keys</a>, meaning if you would like
-			to
-			type <code>è</code> for example, you
-			would input <code>`e</code>.
-		</p>
-		<p>
-			In addition, the following positions have additional code points under
-			<code>alt</code>,
-		</p>
-		<table>
-			<thead>
-				<tr>
-					<th scope="col">Original</th>
-					<th scope="col">New under <code>alt</code></th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr id="q">
-					<td>qu <code>q</code></td>
-					<td>oe <code>œ</code></td>
-				</tr>
-				<tr id="a">
-					<td>a <code>a</code></td>
-					<td>ae <code>æ</code></td>
-				</tr>
-				<tr id="z">
-					<td>zède <code>z</code></td>
-					<td>guillemet ouvrant <code>«</code></td>
-				</tr>
-				<tr id="x">
-					<td>iks <code>x</code></td>
-					<td>guillemet fermant <code>»</code></td>
-				</tr>
-				<tr id="c">
-					<td>cé <code>c</code></td>
-					<td>cé cédille <code>ç</code></td>
-				</tr>
-				<tr id="v">
-					<td>vé <code>v</code></td>
-					<td>double vé <code>w</code></td>
-				</tr>
-				<tr id="6">
-					<td>six <code>6</code></td>
-					<td>tilde <code>~</code></td>
-				</tr>
-			</tbody>
-		</table>
+    <p>There are only 3 keys that are different with ANSI QWERTY:</p>
+    <ol>
+      <li>The <code>W</code> key</li>
+      <li>The apostrophe <code>'</code> key</li>
+      <li>The grave <code>`</code> key</li>
+    </ol>
+    <p>In more detail,</p>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Original</th>
+          <th scope="col">New</th>
+          <th scope="col">New under <code>shift</code></th>
+          <th scope="col">New under <code>alt</code></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="w">
+          <td>double vé <code>w</code></td>
+          <td>e accent aigu <code>é</code></td>
+          <td>e accent aigu <code>É</code></td>
+          <td>none</td>
+        </tr>
+        <tr id="apostrophe">
+          <td>apostrophe <code>'</code></td>
+          <td>accent circonflexe <code>^</code></td>
+          <td>accent tréma <code>¨</code></td>
+          <td>none</td>
+        </tr>
+        <tr id="grave">
+          <td>grave <code>`</code></td>
+          <td>accent grave <code>`</code></td>
+          <td>apostrophe <code>'</code></td>
+          <td>guillemet anglais double <code>"</code></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      the three accents (<code>`</code>, <code>^</code>, and <code>¨</code>)
+      are
+      <a href="https://en.wikipedia.org/wiki/Dead_key#Electronic_keyboards">dead keys</a>, meaning if you would like
+      to
+      type <code>è</code> for example, you
+      would input <code>`e</code>.
+    </p>
+    <p>
+      In addition, the following positions have additional code points under
+      <code>alt</code>,
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Original</th>
+          <th scope="col">New under <code>alt</code></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="q">
+          <td>qu <code>q</code></td>
+          <td>oe <code>œ</code></td>
+        </tr>
+        <tr id="a">
+          <td>a <code>a</code></td>
+          <td>ae <code>æ</code></td>
+        </tr>
+        <tr id="z">
+          <td>zède <code>z</code></td>
+          <td>guillemet ouvrant <code>«</code></td>
+        </tr>
+        <tr id="x">
+          <td>iks <code>x</code></td>
+          <td>guillemet fermant <code>»</code></td>
+        </tr>
+        <tr id="c">
+          <td>cé <code>c</code></td>
+          <td>cé cédille <code>ç</code></td>
+        </tr>
+        <tr id="v">
+          <td>vé <code>v</code></td>
+          <td>double vé <code>w</code></td>
+        </tr>
+        <tr id="6">
+          <td>six <code>6</code></td>
+          <td>tilde <code>~</code></td>
+        </tr>
+      </tbody>
+    </table>
 
-		<h1 id="Download">Download</h1>
-		<p>
-			For macOS users, download
-			<a href="/files/qeerty-kl.dmg" download>here</a>.
-		</p>
-	</div>
+    <h1 id="Download">Download</h1>
+    <p>
+      For macOS users, download
+      <a href="/files/qeerty-kl.dmg" download>here</a>.
+    </p>
+  </div>
 </body>
 
 </html>

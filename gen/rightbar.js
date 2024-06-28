@@ -5,7 +5,7 @@ import { NewNode } from "/gen/meta.js";
  * @returns {Element} Right bar.
  */
 function RightBar() {
-	return document.querySelector(".rightbar");
+  return document.querySelector(".rightbar");
 }
 
 /**
@@ -14,7 +14,7 @@ function RightBar() {
  * @returns {Element} Divider.
  */
 function Divider(text = "\u00A0") {
-	return NewNode("span", {}, text);
+  return NewNode("span", {}, text);
 }
 
 /**
@@ -25,25 +25,25 @@ function Divider(text = "\u00A0") {
  * @returns {Element} Link.
  */
 function Link(id, text, h1 = false) {
-	const localPath = "#" + id;
-	if (h1) {
-		return NewNode(
-			"a",
-			{
-				href: localPath,
-				class: "h1",
-			},
-			text,
-		);
-	} else {
-		return NewNode(
-			"a",
-			{
-				href: localPath,
-			},
-			text,
-		);
-	}
+  const localPath = "#" + id;
+  if (h1) {
+    return NewNode(
+      "a",
+      {
+        href: localPath,
+        class: "h1",
+      },
+      text,
+    );
+  } else {
+    return NewNode(
+      "a",
+      {
+        href: localPath,
+      },
+      text,
+    );
+  }
 }
 
 /**
@@ -51,21 +51,21 @@ function Link(id, text, h1 = false) {
  * @param {Object<string,Object<string,string>>} headingObj Object recording headings to link to.
  */
 function makeRightBarWithSectionDividers(headingObj) {
-	let rightbar = RightBar();
-	Object.entries(headingObj).forEach(([section, headings]) => {
-		rightbar.appendChild(Divider(section));
-		if (Array.isArray(headings)) {
-			headings.forEach((heading) => {
-				let id = heading.replace(/\s/g, "").replace(/\//g, "-").toLowerCase();
-				rightbar.appendChild(Link(id, heading));
-			});
-		} else {
-			Object.entries(headings).forEach(([id, heading]) => {
-				rightbar.appendChild(Link(id, heading));
-			});
-		}
-		rightbar.appendChild(Divider());
-	});
+  let rightbar = RightBar();
+  Object.entries(headingObj).forEach(([section, headings]) => {
+    rightbar.appendChild(Divider(section));
+    if (Array.isArray(headings)) {
+      headings.forEach((heading) => {
+        let id = heading.replace(/\s/g, "").replace(/\//g, "-").toLowerCase();
+        rightbar.appendChild(Link(id, heading));
+      });
+    } else {
+      Object.entries(headings).forEach(([id, heading]) => {
+        rightbar.appendChild(Link(id, heading));
+      });
+    }
+    rightbar.appendChild(Divider());
+  });
 }
 
 /**
@@ -73,28 +73,28 @@ function makeRightBarWithSectionDividers(headingObj) {
  * @returns {NodeListOf<Element>} A list of headings.
  */
 function AllHeadings() {
-	return document.body.querySelectorAll("h1[id], h2[id]");
+  return document.body.querySelectorAll("h1[id], h2[id]");
 }
 
 /**
  * Make a right bar by listing all <h1> and <h2> headings with id.
  */
 function makeRightBarWithToc() {
-	let rightbar = RightBar();
-	let seenH1 = false;
-	const headings = AllHeadings();
-	headings.forEach((heading) => {
-		let isH1 = (heading.tagName.toLowerCase() == "h1");
-		if (isH1) {
-			if (seenH1) {
-				rightbar.appendChild(Divider());
-			} else {
-				seenH1 = true;
-			}
-		}
-		rightbar.appendChild(Link(heading.id, heading.id, isH1));
-	});
-	rightbar.appendChild(Divider());
+  let rightbar = RightBar();
+  let seenH1 = false;
+  const headings = AllHeadings();
+  headings.forEach((heading) => {
+    let isH1 = (heading.tagName.toLowerCase() == "h1");
+    if (isH1) {
+      if (seenH1) {
+        rightbar.appendChild(Divider());
+      } else {
+        seenH1 = true;
+      }
+    }
+    rightbar.appendChild(Link(heading.id, heading.id, isH1));
+  });
+  rightbar.appendChild(Divider());
 }
 
 /**
@@ -102,9 +102,9 @@ function makeRightBarWithToc() {
  * @param {Object<string,Object<string,string>>} obj Object recording headings to link to.
  */
 export default function makeRightBar(obj = null) {
-	if (obj) {
-		makeRightBarWithSectionDividers(obj);
-	} else {
-		makeRightBarWithToc();
-	}
+  if (obj) {
+    makeRightBarWithSectionDividers(obj);
+  } else {
+    makeRightBarWithToc();
+  }
 }
