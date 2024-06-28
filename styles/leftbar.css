@@ -8,7 +8,6 @@
   overflow-y: auto;
   width: var(--leftbar-width);
   padding-top: var(--document-margin);
-  padding-bottom: var(--document-margin);
   text-align: left;
   background-color: var(--leftbar-background-color);
   font-size: var(--bar-item-font-size);
@@ -25,7 +24,6 @@
 }
 
 .leftbar a[signature] {
-  font-family: "Drafting Mono";
   font-weight: bold;
 }
 
