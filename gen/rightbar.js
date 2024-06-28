@@ -83,7 +83,6 @@ function makeRightBarWithToc() {
 	let rightbar = RightBar();
 	let seenH1 = false;
 	const headings = AllHeadings();
-	console.log("Found", headings.length, "headings");
 	headings.forEach((heading) => {
 		let isH1 = (heading.tagName.toLowerCase() == "h1");
 		if (isH1) {
@@ -106,7 +105,6 @@ export default function makeRightBar(obj = null) {
 	if (obj) {
 		makeRightBarWithSectionDividers(obj);
 	} else {
-		console.log("Making right bar with table of contents.");
 		makeRightBarWithToc();
 	}
 }
