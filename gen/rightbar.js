@@ -95,6 +95,7 @@ function makeRightBarWithToc() {
 		}
 		rightbar.appendChild(Link(heading.id, heading.id, isH1));
 	});
+	rightbar.appendChild(Divider());
 }
 
 /**
