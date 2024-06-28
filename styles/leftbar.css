@@ -7,7 +7,7 @@
   overflow-x: hidden;
   overflow-y: auto;
   width: var(--leftbar-width);
-  padding-top: var(--document-margin);
+  padding-top: var(--document-padding);
   text-align: left;
   background-color: var(--leftbar-background-color);
   font-size: var(--bar-item-font-size);
@@ -18,7 +18,7 @@
   text-decoration: none;
   display: block;
   color: white;
-  padding: var(--bar-item-vertical-padding) calc(0.85 * var(--document-margin));
+  padding: var(--bar-item-vertical-padding) calc(0.85 * var(--document-padding));
   font-size: var(--bar-heading-font-size);
   font-weight: 600;
 }
@@ -33,7 +33,7 @@
 }
 
 .leftbar a:not([signature]) {
-  padding: var(--bar-item-vertical-padding) var(--document-margin);
+  padding: var(--bar-item-vertical-padding) var(--document-padding);
   text-decoration: none;
   color: #ffffff;
   display: block;
@@ -53,10 +53,12 @@ footer {
   z-index: 2;
   overflow-x: hidden;
   overflow-y: hidden;
-  padding-left: var(--document-margin);
-  padding-bottom: var(--document-margin);
+  width: var(--leftbar-width);
+  padding: var(--document-padding);
   font-size: 10px;
   color: white;
+  display: block;
+  background-color: var(--leftbar-background-color);
 }
 
 footer a {

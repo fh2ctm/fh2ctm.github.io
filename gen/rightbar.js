@@ -21,29 +21,19 @@ function Divider(text = "\u00A0") {
  * <a href="#id">text</a>
  * @param {string} id Heading ID to link to.
  * @param {*} text Inner text.
- * @param {boolean} h1 Whether this is an <h1> heading.
+ * @param {int} level Level of heading. 
  * @returns {Element} Link.
  */
-function Link(id, text, h1 = false) {
+function Link(id, text, level) {
   const localPath = "#" + id;
-  if (h1) {
-    return NewNode(
-      "a",
-      {
-        href: localPath,
-        class: "h1",
-      },
-      text,
-    );
-  } else {
-    return NewNode(
-      "a",
-      {
-        href: localPath,
-      },
-      text,
-    );
-  }
+  return NewNode(
+    "a",
+    {
+      class: "h" + level,
+      href: localPath,
+    },
+    text,
+  );
 }
 
 /**
@@ -55,22 +45,22 @@ function AllHeadings() {
 }
 
 /**
- * Make a right bar by listing all <h1> and <h2> headings with id.
+ * Make a right bar by listing all levels 1, 2, 3 headings with id.
  */
 export default function makeRightBar() {
   let rightbar = RightBar();
   let seenH1 = false;
   const headings = AllHeadings();
   headings.forEach((heading) => {
-    let isH1 = (heading.tagName.toLowerCase() == "h1");
-    if (isH1) {
+    let doc_heading_level = heading.tagName.charAt(1);
+    if (doc_heading_level === "1") {
       if (seenH1) {
         rightbar.appendChild(Divider());
       } else {
         seenH1 = true;
       }
     }
-    rightbar.appendChild(Link(heading.id, heading.id, isH1));
+    rightbar.appendChild(Link(heading.id, heading.id, doc_heading_level));
   });
   rightbar.appendChild(Divider());
 }

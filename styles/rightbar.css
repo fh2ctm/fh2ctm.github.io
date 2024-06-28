@@ -7,7 +7,7 @@
   overflow-x: hidden;
   overflow-y: scroll;
   width: var(--rightbar-width);
-  padding-top: var(--document-margin);
+  padding-top: var(--document-padding);
   text-align: right;
   background-color: transparent;
   font-size: var(--bar-item-font-size);
@@ -22,13 +22,13 @@
 
 .rightbar span,
 .rightbar a.h1 {
-  padding: var(--bar-item-vertical-padding) calc(0.9 * var(--document-margin));
+  padding: var(--bar-item-vertical-padding) calc(0.9 * var(--document-padding));
   font-weight: 600;
   font-size: var(--bar-heading-font-size);
 }
 
 .rightbar a {
-  padding: var(--bar-item-vertical-padding) calc(1.2 * var(--document-margin)) var(--bar-item-vertical-padding) var(--document-margin);
+  padding: var(--bar-item-vertical-padding) calc(1.1 * var(--document-padding)) var(--bar-item-vertical-padding) var(--document-padding);
 }
 
 .rightbar :hover {
