@@ -48,7 +48,6 @@ h3::before {
 
 blockquote {
   font-style: italic;
-  font-size: calc(var(--document-font-size) - 1pt);
   background-color: var(--blockquote-background-color);
   padding: var(--blockquote-vertical-padding) var(--blockquote-horizontal-padding);
   margin: 0;

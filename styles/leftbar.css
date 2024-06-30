@@ -54,7 +54,7 @@ footer {
   overflow-x: hidden;
   overflow-y: hidden;
   width: var(--leftbar-width);
-  padding: var(--document-padding);
+  padding: calc(1.1 * var(--document-padding));
   font-size: 10px;
   color: white;
   display: block;
