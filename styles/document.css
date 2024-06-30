@@ -26,6 +26,7 @@ h1:not(:first-child) {
 
 h2 {
   font-size: calc(var(--document-font-size) + 2pt);
+  margin-top: var(--h2-top-margin);
 }
 
 h2::before {
@@ -40,6 +41,7 @@ h3 {
 
 h3 {
   font-size: calc(var(--document-font-size) + 1pt);
+  margin-top: var(--h3-top-margin);
 }
 
 h3::before {
