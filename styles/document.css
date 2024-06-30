@@ -23,6 +23,7 @@ h1 {
 
 h2 {
   font-size: calc(var(--document-font-size) + 2pt);
+  font-weight: 600;
   margin-top: var(--h2-top-margin);
 }
 
@@ -31,19 +32,10 @@ h2::before {
   color: darkgray;
 }
 
-h2,
-h3 {
-  font-weight: 600;
-}
-
-h3 {
-  font-size: calc(var(--document-font-size) + 1pt);
-  margin-top: var(--h3-top-margin);
-}
-
-h3::before {
-  content: "# ";
-  color: darkgray;
+h1 span,
+h2 span {
+  color: lightgray;
+  float: right;
 }
 
 blockquote {
