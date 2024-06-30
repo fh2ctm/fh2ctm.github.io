@@ -28,7 +28,7 @@
 }
 
 .leftbar a[signature]:hover {
-  color: var(--theme);
+  color: var(--theme-shade-1);
   background-color: white;
 }
 
