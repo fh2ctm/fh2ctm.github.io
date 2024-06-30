@@ -11,11 +11,11 @@
   --bar-item-vertical-padding: 6px;
 
   --blockquote-vertical-padding: 1em;
-  --blockquote-horizontal-padding: 1.3em;
+  --blockquote-horizontal-padding: calc(1em + 6pt);
   --blockquote-background-color: #e8f4f1;
 
   --code-line-height: 1.5;
-  --code-line-background: rgb(230, 230, 230);
+  --code-line-background: lightgray;
   --code-vertical-padding: 0pt;
   --code-horizontal-padding: 0px;
 
@@ -26,14 +26,9 @@
   --h2-top-margin: 1.6em;
   --h3-top-margin: 1.2em;
 
-  --heading-symbol-spacing: 0.3em;
-
   --leftbar-width: 14em;
   --leftbar-background-color: #1e9a7c;
 
-  --link-color: #1b8a6f;
-  --link-hover-color: #4aae96;
-  --link-hover-shadow-color: #bbe0d7;
   --link-hover-shadow-xshift: 0px;
   --link-hover-shadow-yshift: 4px;
   --link-hover-shadow-radius: 8px;

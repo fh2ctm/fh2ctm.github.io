@@ -39,10 +39,10 @@ h2 span {
 }
 
 blockquote {
-  font-style: italic;
+  border-left: #1e9a7c 3pt solid;
   background-color: var(--blockquote-background-color);
   padding: var(--blockquote-vertical-padding) var(--blockquote-horizontal-padding);
-  margin: 0;
+  margin: calc(var(--document-padding) / 2) 0;
 }
 
 p>code,
