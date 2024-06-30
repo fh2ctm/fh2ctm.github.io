@@ -32,7 +32,7 @@ h2::before {
 }
 
 span.note {
-  color: var(--theme-tint-3);
+  color: darkgray;
   float: right;
   font-weight: 200;
 }
