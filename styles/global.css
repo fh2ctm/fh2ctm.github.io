@@ -27,10 +27,10 @@
 
   --bar-heading-font-size: 13pt;
   --bar-item-font-size: 11pt;
-  --bar-item-vertical-padding: 6px;
+  --bar-item-vertical-padding: 0.4em;
   --bar-width: 14em;
 
-  --document-padding: 1.2em;
+  --document-padding: 1.4em;
   --document-font-size: 12pt;
 }
 
