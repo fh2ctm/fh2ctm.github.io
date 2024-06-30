@@ -6,7 +6,7 @@
   z-index: 1;
   overflow-x: hidden;
   overflow-y: scroll;
-  width: var(--rightbar-width);
+  width: var(--bar-width);
   padding-top: var(--document-padding);
   text-align: right;
   background-color: transparent;
@@ -32,5 +32,5 @@
 }
 
 .rightbar :hover {
-  color: #1e9a7c;
+  color: var(--theme);
 }

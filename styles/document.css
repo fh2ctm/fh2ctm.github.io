@@ -1,6 +1,5 @@
 .document {
-  margin-left: var(--leftbar-width);
-  margin-right: var(--rightbar-width);
+  margin: 0 var(--bar-width);
   padding: var(--document-padding);
   font-size: var(--document-font-size);
   overflow-x: hidden;
@@ -12,19 +11,19 @@
 }
 
 .document hr {
-  border: 1pt solid #1e9a7c;
+  border: 1pt solid var(--theme);
 }
 
 h1 {
   font-size: calc(var(--document-font-size) + 4pt);
   font-weight: 700;
-  margin-top: var(--h1-top-margin);
+  margin-top: 2em;
 }
 
 h2 {
   font-size: calc(var(--document-font-size) + 2pt);
   font-weight: 600;
-  margin-top: var(--h2-top-margin);
+  margin-top: 1.6em;
 }
 
 h2::before {
@@ -32,16 +31,16 @@ h2::before {
   color: darkgray;
 }
 
-h1 span,
-h2 span {
-  color: lightgray;
+span.note {
+  color: var(--theme-tint-3);
   float: right;
+  font-weight: 200;
 }
 
 blockquote {
-  border-left: #1e9a7c 3pt solid;
-  background-color: var(--blockquote-background-color);
-  padding: var(--blockquote-vertical-padding) var(--blockquote-horizontal-padding);
+  border-left: var(--theme) 3pt solid;
+  background-color: var(--theme-tint-9);
+  padding: 1em calc(1em + 6pt);
   margin: calc(var(--document-padding) / 2) 0;
 }
 
@@ -49,18 +48,18 @@ p>code,
 li>code,
 th>code,
 td>code {
-  padding: var(--code-vertical-padding) var(--code-horizontal-padding);
-  background: var(--code-line-background);
+  padding: 0;
+  background: lightgray;
 }
 
 p a[href] {
-  color: var(--link-color);
+  color: var(--theme);
   text-decoration: unset;
 }
 
 p a[href]:hover {
   color: white;
-  background-color: var(--link-hover-color);
+  background-color: var(--theme);
 }
 
 table {
@@ -90,7 +89,7 @@ thead th {
   }
 
   .document {
-    margin-right: var(--document-padding);
+    margin-right: 0;
   }
 }
 
@@ -100,6 +99,6 @@ thead th {
   }
 
   .document {
-    margin-left: var(--document-padding);
+    margin-left: 0;
   }
 }

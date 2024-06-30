@@ -6,10 +6,10 @@
   z-index: 1;
   overflow-x: hidden;
   overflow-y: auto;
-  width: var(--leftbar-width);
+  width: var(--bar-width);
   padding-top: var(--document-padding);
   text-align: left;
-  background-color: var(--leftbar-background-color);
+  background-color: var(--theme);
   font-size: var(--bar-item-font-size);
 }
 
@@ -28,21 +28,21 @@
 }
 
 .leftbar a[signature]:hover {
-  color: #1e9a7c;
-  background-color: #ffffff;
+  color: var(--theme);
+  background-color: white;
 }
 
 .leftbar a:not([signature]) {
   padding: var(--bar-item-vertical-padding) var(--document-padding);
   text-decoration: none;
-  color: #ffffff;
+  color: white;
   display: block;
 }
 
 .leftbar a:not([signature]):hover,
 .leftbar a[selected] {
-  color: #1e9a7c;
-  background-color: #ffffff;
+  color: var(--theme);
+  background-color: white;
 }
 
 footer {
@@ -58,7 +58,7 @@ footer {
   font-size: 10px;
   color: white;
   display: block;
-  background-color: var(--leftbar-background-color);
+  background-color: var(--theme);
 }
 
 footer a {

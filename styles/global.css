@@ -6,34 +6,33 @@
 
 /* Global variables */
 :root {
+  --theme-tint-9: #e8f4f1;
+  --theme-tint-8: #d2eae4;
+  --theme-tint-7: #bbe0d7;
+  --theme-tint-6: #a5d6ca;
+  --theme-tint-5: #8eccbd;
+  --theme-tint-4: #78c2b0;
+  --theme-tint-3: #61b8a3;
+  --theme-tint-2: #4aae96;
+  --theme-tint-1: #34a489;
+  --theme: #1e9a7c;
+  --theme-shade-1: #1b8a6f;
+  --theme-shade-2: #187b63;
+  --theme-shade-3: #156b56;
+  --theme-shade-4: #125c4a;
+  --theme-shade-5: #0f4d3e;
+  --theme-shade-6: #0c3d31;
+  --theme-shade-7: #092e25;
+  --theme-shade-8: #061e18;
+  --theme-shade-9: #030f0c;
+
   --bar-heading-font-size: 13pt;
   --bar-item-font-size: 11pt;
   --bar-item-vertical-padding: 6px;
-
-  --blockquote-vertical-padding: 1em;
-  --blockquote-horizontal-padding: calc(1em + 6pt);
-  --blockquote-background-color: #e8f4f1;
-
-  --code-line-height: 1.5;
-  --code-line-background: lightgray;
-  --code-vertical-padding: 0pt;
-  --code-horizontal-padding: 0px;
+  --bar-width: 14em;
 
   --document-padding: 1.4em;
   --document-font-size: 12pt;
-
-  --h1-top-margin: 2em;
-  --h2-top-margin: 1.6em;
-  --h3-top-margin: 1.2em;
-
-  --leftbar-width: 14em;
-  --leftbar-background-color: #1e9a7c;
-
-  --link-hover-shadow-xshift: 0px;
-  --link-hover-shadow-yshift: 4px;
-  --link-hover-shadow-radius: 8px;
-
-  --rightbar-width: 14em;
 }
 
 /* Default font for page */
