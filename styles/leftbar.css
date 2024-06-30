@@ -41,7 +41,7 @@
 
 .leftbar a:not([signature]):hover,
 .leftbar a[selected] {
-  color: var(--theme);
+  color: var(--theme-shade-1);
   background-color: white;
 }
 

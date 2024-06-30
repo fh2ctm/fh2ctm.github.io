@@ -4,7 +4,6 @@
 @import url("rightbar.css");
 @import url("hl.css");
 
-/* Global variables */
 :root {
   --theme-tint-9: #e8f4f1;
   --theme-tint-8: #d2eae4;
@@ -35,7 +34,6 @@
   --document-font-size: 12pt;
 }
 
-/* Default font for page */
 body {
   font-family: "Drafting Mono";
   font-weight: normal;
