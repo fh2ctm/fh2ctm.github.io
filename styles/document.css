@@ -44,7 +44,7 @@ b.important {
 blockquote {
   border-left: var(--theme) 3pt solid;
   background-color: var(--theme-tint-9);
-  padding: 1em calc(1em + 6pt);
+  padding: 1em 1em 1em calc(1em + 3pt);
   margin: calc(var(--document-padding) / 2) 0;
 }
 
