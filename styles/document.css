@@ -57,13 +57,13 @@ td>code {
 }
 
 p a[href] {
-  color: var(--theme);
+  color: var(--theme-shade-1);
   text-decoration: unset;
 }
 
 p a[href]:hover {
   color: white;
-  background-color: var(--theme);
+  background-color: var(--theme-tint-1);
 }
 
 table {
