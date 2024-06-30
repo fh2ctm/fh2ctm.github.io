@@ -37,6 +37,10 @@ span.note {
   font-weight: 200;
 }
 
+b.important {
+  color: red;
+}
+
 blockquote {
   border-left: var(--theme) 3pt solid;
   background-color: var(--theme-tint-9);
