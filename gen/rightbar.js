@@ -60,7 +60,10 @@ export default function makeRightBar() {
         seenH1 = true;
       }
     }
-    rightbar.appendChild(Link(heading.id, heading.id, doc_heading_level));
+    let name = heading.id;
+    let firstChar = name.charAt(0);
+    if (firstChar == firstChar.toLocaleLowerCase()) { name = name.slice(1); }
+    rightbar.appendChild(Link(heading.id, name, doc_heading_level));
   });
   rightbar.appendChild(Divider());
 }
