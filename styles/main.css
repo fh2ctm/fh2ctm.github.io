@@ -85,6 +85,14 @@ thead th {
   width: fit-content;
 }
 
+dl {
+  text-indent: 2em;
+}
+
+dt {
+  font-weight: 700;
+}
+
 @media (max-width: 1000px) {
   .rightbar {
     display: none;
