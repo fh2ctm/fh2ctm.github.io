@@ -36,6 +36,11 @@ del {
   background-color: #fed0ce;
 }
 
+ins {
+  text-decoration: underline;
+  background-color: #c5dacb;
+}
+
 b.important {
   color: red;
 }
