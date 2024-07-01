@@ -1,3 +1,4 @@
+@import url("fonts/commit-mono/reg.css");
 @import url("fonts/drafting-mono/reg.css");
 @import url("bar.css");
 @import url("main.css");
@@ -32,4 +33,10 @@
   --document-padding: 1.2em;
 
   font-family: "Drafting Mono";
+}
+
+code,
+kbd {
+  font-size: small;
+  font-family: "Commit Mono R";
 }
