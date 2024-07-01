@@ -1,108 +1,108 @@
 .document {
-    margin: 0 var(--bar-width);
-    padding: var(--document-padding);
-    font-size: var(--document-font-size);
-    overflow-x: hidden;
-    overflow-y: auto;
+  margin: 0 var(--bar-width);
+  padding: var(--document-padding);
+  font-size: var(--document-font-size);
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .document[no-rightbar] {
-    margin-right: var(--document-padding);
+  margin-right: var(--document-padding);
 }
 
 .document hr {
-    border: 1pt solid var(--theme);
+  border: 1pt solid var(--theme);
 }
 
 h1 {
-    font-size: calc(var(--document-font-size) + 4pt);
-    font-weight: 700;
-    margin-top: 2em;
+  font-size: calc(var(--document-font-size) + 4pt);
+  font-weight: 700;
+  margin-top: 2em;
 }
 
 h2 {
-    font-size: calc(var(--document-font-size) + 2pt);
-    font-weight: 600;
-    margin-top: 1.6em;
+  font-size: calc(var(--document-font-size) + 2pt);
+  font-weight: 600;
+  margin-top: 1.6em;
 }
 
 h2::before {
-    content: "§ ";
-    color: darkgray;
+  content: "§ ";
+  color: darkgray;
 }
 
 span.note {
-    color: darkgray;
-    float: right;
-    font-weight: 200;
+  color: darkgray;
+  float: right;
+  font-weight: 200;
 }
 
 b.important {
-    color: red;
+  color: red;
 }
 
 blockquote {
-    border-left: var(--theme) 3pt solid;
-    background-color: var(--theme-tint-9);
-    padding: 1em 1em 1em calc(1em + 3pt);
-    margin: calc(var(--document-padding) / 2) 0;
+  border-left: var(--theme) 3pt solid;
+  background-color: var(--theme-tint-9);
+  padding: 1em 1em 1em calc(1em + 3pt);
+  margin: calc(var(--document-padding) / 2) 0;
 }
 
 p>code,
 li>code,
 th>code,
 td>code {
-    padding: 0;
-    background: lightgray;
+  padding: 0;
+  background: var(--theme-tint-9);
 }
 
 p a[href] {
-    color: var(--theme-shade-1);
-    text-decoration: unset;
+  color: var(--theme-shade-1);
+  text-decoration: unset;
 }
 
 p a[href]:hover {
-    color: white;
-    background-color: var(--theme-tint-1);
+  color: white;
+  background-color: var(--theme-tint-1);
 }
 
 table {
-    table-layout: fixed;
-    border-collapse: collapse;
+  table-layout: fixed;
+  border-collapse: collapse;
 }
 
 table,
 td,
 th {
-    border: 0.6px solid darkgray;
-    padding: 4pt 7pt;
+  border: 0.6px solid darkgray;
+  padding: 4pt 7pt;
 }
 
 td {
-    text-align: left;
+  text-align: left;
 }
 
 thead th {
-    font-weight: bold;
-    width: fit-content;
+  font-weight: bold;
+  width: fit-content;
 }
 
 @media (max-width: 1000px) {
-    .rightbar {
-        display: none;
-    }
+  .rightbar {
+    display: none;
+  }
 
-    .document {
-        margin-right: 0;
-    }
+  .document {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 800px) {
-    .leftbar {
-        display: none;
-    }
+  .leftbar {
+    display: none;
+  }
 
-    .document {
-        margin-left: 0;
-    }
+  .document {
+    margin-left: 0;
+  }
 }

@@ -44,29 +44,3 @@
   color: var(--theme-shade-1);
   background-color: white;
 }
-
-footer {
-  bottom: 0;
-  left: 0;
-  height: auto;
-  position: fixed;
-  z-index: 2;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  width: var(--leftbar-width);
-  padding: calc(1.1 * var(--document-padding));
-  font-size: 10px;
-  color: white;
-  display: block;
-  background-color: var(--theme);
-}
-
-footer a {
-  color: unset;
-  text-decoration: unset;
-  display: block;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}

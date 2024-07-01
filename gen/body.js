@@ -6,4 +6,3 @@ makeLeftBar();
 if (!document.body.hasAttribute("no-rightbar")) {
   makeRightBar();
 }
-makeFooter();
