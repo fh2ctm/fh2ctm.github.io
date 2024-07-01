@@ -27,10 +27,11 @@
 
   --bar-heading-font-size: 13pt;
   --bar-item-font-size: 11pt;
-  --bar-item-vertical-padding: 0.4em;
+  --bar-item-vertical-padding: 0.5em;
   --bar-width: 14em;
   --document-font-size: 12pt;
-  --document-padding: 1.6em;
+  --document-padding: 1.5em;
+  --rounded-corner-radius: 0.3em;
 
   font-family: "Drafting Mono";
 }

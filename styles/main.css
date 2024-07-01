@@ -51,6 +51,8 @@ blockquote {
   background-color: var(--theme-tint-9);
   padding: 1em 1em 1em calc(1em + 3pt);
   margin: calc(var(--document-padding) / 2) 0;
+  border-top-right-radius: var(--rounded-corner-radius);
+  border-bottom-right-radius: var(--rounded-corner-radius);
 }
 
 p code,
