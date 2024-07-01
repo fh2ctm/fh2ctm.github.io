@@ -53,7 +53,7 @@ nav.right {
   text-align: right;
 }
 
-nav.left span,
+nav span,
 nav.right a.h1 {
   padding: var(--bar-item-vertical-padding) calc(0.85 * var(--document-padding));
   font-weight: 600;
