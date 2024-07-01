@@ -1,39 +1,38 @@
 @import url("fonts/drafting-mono/reg.css");
+@import url("bar.css");
 @import url("document.css");
-@import url("leftbar.css");
-@import url("rightbar.css");
 @import url("hl.css");
 
 :root {
-    --theme-tint-9: #e8f4f1;
-    --theme-tint-8: #d2eae4;
-    --theme-tint-7: #bbe0d7;
-    --theme-tint-6: #a5d6ca;
-    --theme-tint-5: #8eccbd;
-    --theme-tint-4: #78c2b0;
-    --theme-tint-3: #61b8a3;
-    --theme-tint-2: #4aae96;
-    --theme-tint-1: #34a489;
-    --theme: #1e9a7c;
-    --theme-shade-1: #1b8a6f;
-    --theme-shade-2: #187b63;
-    --theme-shade-3: #156b56;
-    --theme-shade-4: #125c4a;
-    --theme-shade-5: #0f4d3e;
-    --theme-shade-6: #0c3d31;
-    --theme-shade-7: #092e25;
-    --theme-shade-8: #061e18;
-    --theme-shade-9: #030f0c;
+  --theme-tint-9: #e8f4f1;
+  --theme-tint-8: #d2eae4;
+  --theme-tint-7: #bbe0d7;
+  --theme-tint-6: #a5d6ca;
+  --theme-tint-5: #8eccbd;
+  --theme-tint-4: #78c2b0;
+  --theme-tint-3: #61b8a3;
+  --theme-tint-2: #4aae96;
+  --theme-tint-1: #34a489;
+  --theme: #1e9a7c;
+  --theme-shade-1: #1b8a6f;
+  --theme-shade-2: #187b63;
+  --theme-shade-3: #156b56;
+  --theme-shade-4: #125c4a;
+  --theme-shade-5: #0f4d3e;
+  --theme-shade-6: #0c3d31;
+  --theme-shade-7: #092e25;
+  --theme-shade-8: #061e18;
+  --theme-shade-9: #030f0c;
 
-    --bar-heading-font-size: 13pt;
-    --bar-item-font-size: 11pt;
-    --bar-item-vertical-padding: 0.4em;
-    --bar-width: 14em;
-    --document-font-size: 12pt;
-    --document-padding: 1.2em;
+  --bar-heading-font-size: 13pt;
+  --bar-item-font-size: 11pt;
+  --bar-item-vertical-padding: 0.4em;
+  --bar-width: 14em;
+  --document-font-size: 12pt;
+  --document-padding: 1.2em;
 }
 
 body {
-    font-family: "Drafting Mono";
-    font-weight: normal;
+  font-family: "Drafting Mono";
+  font-weight: normal;
 }

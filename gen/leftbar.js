@@ -24,7 +24,7 @@ function Divider(text = "\u00A0") {
  * @returns {Element} Left bar.
  */
 function LeftBar() {
-  return document.querySelector(".leftbar");
+  return document.querySelector("nav.left");
 }
 
 /**

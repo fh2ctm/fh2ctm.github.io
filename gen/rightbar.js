@@ -1,11 +1,20 @@
 import { NewNode } from "/gen/meta.js";
 
+const rightBarSignature = NewNode(
+  "a",
+  {
+    signature: "",
+    href: "#top",
+  },
+  "Top of the Page",
+);
+
 /**
  * <div class="rightbar"></div>
  * @returns {Element} Right bar.
  */
 function RightBar() {
-  return document.querySelector(".rightbar");
+  return document.querySelector("nav.right");
 }
 
 /**
@@ -51,6 +60,8 @@ export default function makeRightBar() {
   let rightbar = RightBar();
   let seenH1 = false;
   const headings = AllHeadings();
+  rightbar.appendChild(rightBarSignature);
+  rightbar.appendChild(Divider());
   headings.forEach((heading) => {
     let doc_heading_level = heading.tagName.charAt(1);
     if (doc_heading_level === "1") {
