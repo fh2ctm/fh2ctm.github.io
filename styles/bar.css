@@ -18,7 +18,7 @@ nav.left a {
 }
 
 nav a[signature] {
-  padding: var(--bar-item-vertical-padding) var(--document-padding);
+  padding: var(--bar-item-vertical-padding) calc(0.85 * var(--document-padding));
   font-size: var(--bar-heading-font-size);
   font-weight: 300;
 }
