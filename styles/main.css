@@ -108,8 +108,8 @@ dt {
   font-weight: 700;
 }
 
-@media (max-width: 1000px) {
-  .rightbar {
+@media (max-width: 1080px) {
+  nav.right {
     display: none;
   }
 
@@ -118,8 +118,8 @@ dt {
   }
 }
 
-@media (max-width: 800px) {
-  .leftbar {
+@media (max-width: 760px) {
+  nav.left {
     display: none;
   }
 
