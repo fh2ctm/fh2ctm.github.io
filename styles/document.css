@@ -31,10 +31,8 @@ h2::before {
   color: darkgray;
 }
 
-span.note {
-  color: darkgray;
-  float: right;
-  font-weight: 200;
+span.del {
+  text-decoration: line-through;
 }
 
 b.important {
