@@ -5,7 +5,7 @@ import { NewNode } from "/gen/meta.js";
  * @returns {Element} Right bar.
  */
 function RightBar() {
-  return document.querySelector(".rightbar");
+    return document.querySelector(".rightbar");
 }
 
 /**
@@ -14,7 +14,7 @@ function RightBar() {
  * @returns {Element} Divider.
  */
 function Divider(text = "\u00A0") {
-  return NewNode("span", {}, text);
+    return NewNode("span", {}, text);
 }
 
 /**
@@ -25,15 +25,15 @@ function Divider(text = "\u00A0") {
  * @returns {Element} Link.
  */
 function Link(id, text, level) {
-  const localPath = "#" + id;
-  return NewNode(
-    "a",
-    {
-      class: "h" + level,
-      href: localPath,
-    },
-    text,
-  );
+    const localPath = "#" + id;
+    return NewNode(
+        "a",
+        {
+            class: "h" + level,
+            href: localPath,
+        },
+        text,
+    );
 }
 
 /**
@@ -41,29 +41,29 @@ function Link(id, text, level) {
  * @returns {NodeListOf<Element>} A list of headings.
  */
 function AllHeadings() {
-  return document.body.querySelectorAll("h1[id], h2[id]");
+    return document.body.querySelectorAll("h1[id], h2[id]");
 }
 
 /**
  * Make a right bar by listing all levels 1, 2, 3 headings with id.
  */
 export default function makeRightBar() {
-  let rightbar = RightBar();
-  let seenH1 = false;
-  const headings = AllHeadings();
-  headings.forEach((heading) => {
-    let doc_heading_level = heading.tagName.charAt(1);
-    if (doc_heading_level === "1") {
-      if (seenH1) {
-        rightbar.appendChild(Divider());
-      } else {
-        seenH1 = true;
-      }
-    }
-    let name = heading.id;
-    let firstChar = name.charAt(0);
-    if (firstChar == firstChar.toLocaleLowerCase()) { name = name.slice(1); }
-    rightbar.appendChild(Link(heading.id, name, doc_heading_level));
-  });
-  rightbar.appendChild(Divider());
+    let rightbar = RightBar();
+    let seenH1 = false;
+    const headings = AllHeadings();
+    headings.forEach((heading) => {
+        let doc_heading_level = heading.tagName.charAt(1);
+        if (doc_heading_level === "1") {
+            if (seenH1) {
+                rightbar.appendChild(Divider());
+            } else {
+                seenH1 = true;
+            }
+        }
+        let name = heading.id;
+        let firstChar = name.charAt(0);
+        if (firstChar == firstChar.toLocaleLowerCase()) { name = name.slice(1); }
+        rightbar.appendChild(Link(heading.id, name, doc_heading_level));
+    });
+    rightbar.appendChild(Divider());
 }
