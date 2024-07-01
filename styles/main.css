@@ -45,6 +45,7 @@ b.important {
   color: red;
 }
 
+details,
 blockquote {
   border-left: var(--theme) 3pt solid;
   background-color: var(--theme-tint-9);
