@@ -53,12 +53,20 @@ blockquote {
   margin: calc(var(--document-padding) / 2) 0;
 }
 
-p>code,
-li>code,
-th>code,
-td>code {
-  padding: 0;
-  background: var(--theme-tint-9);
+p code,
+ul code,
+ol code,
+table code {
+  background-color: var(--theme-tint-9);
+  padding: 0 0.3em;
+  border-radius: 3pt;
+}
+
+kbd {
+  padding: 0 0.25em;
+  border: var(--theme-shade-1) 1px solid;
+  border-radius: 0.3em;
+  font-weight: 300;
 }
 
 p a[href] {
