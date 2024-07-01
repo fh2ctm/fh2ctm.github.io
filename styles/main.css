@@ -1,4 +1,4 @@
-.document {
+main {
   margin: 0 var(--bar-width);
   padding: var(--document-padding);
   font-size: var(--document-font-size);
@@ -6,12 +6,12 @@
   overflow-y: auto;
 }
 
-.document[no-rightbar] {
-  margin-right: var(--document-padding);
+main hr {
+  border: 1pt solid var(--theme);
 }
 
-.document hr {
-  border: 1pt solid var(--theme);
+main:not(:has(+ nav.right)) {
+  margin-right: 0;
 }
 
 h1 {
@@ -90,7 +90,7 @@ thead th {
     display: none;
   }
 
-  .document {
+  main {
     margin-right: 0;
   }
 }
@@ -100,7 +100,7 @@ thead th {
     display: none;
   }
 
-  .document {
+  main {
     margin-left: 0;
   }
 }
