@@ -17,14 +17,10 @@ nav.left a {
   color: inherit;
 }
 
-nav span,
 nav a[signature] {
-  padding: var(--bar-item-vertical-padding) calc(0.85 * var(--document-padding));
+  padding: var(--bar-item-vertical-padding) var(--document-padding);
   font-size: var(--bar-heading-font-size);
-}
-
-nav a[signature] {
-  font-weight: bold;
+  font-weight: 200;
 }
 
 nav.left {
