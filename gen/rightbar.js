@@ -6,7 +6,7 @@ const rightBarSignature = NewNode(
     signature: "",
     href: "#top",
   },
-  "Top of the Page",
+  "Go Top",
 );
 
 /**

@@ -44,6 +44,10 @@ nav.left a[selected] {
   background-color: white;
 }
 
+nav.left a[signature]:hover::after {
+  content: " ~";
+}
+
 nav.right {
   background-color: transparent;
   right: 0;
@@ -68,4 +72,8 @@ nav.right a.h2 {
 
 nav.right a:hover {
   color: var(--theme-shade-1);
+}
+
+nav.right a[signature]:hover::before {
+  content: "^ ";
 }
