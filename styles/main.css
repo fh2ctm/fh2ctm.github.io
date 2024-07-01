@@ -31,8 +31,9 @@ h2::before {
   color: darkgray;
 }
 
-span.del {
+del {
   text-decoration: line-through;
+  background-color: #fed0ce;
 }
 
 b.important {
