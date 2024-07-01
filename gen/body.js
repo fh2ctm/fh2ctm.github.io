@@ -4,6 +4,6 @@ import makeRightBar from "/gen/rightbar.js";
 
 makeLeftBar();
 if (!document.body.hasAttribute("no-rightbar")) {
-    makeRightBar();
+  makeRightBar();
 }
 makeFooter();
