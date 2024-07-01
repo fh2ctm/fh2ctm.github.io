@@ -1,22 +1,13 @@
 import { NewNode, CurrentFilename } from "/gen/meta.js";
 import pageCategory from "/data/site-dir.js";
 
-const indexSignature = NewNode(
-  "a",
-  {
-    signature: "",
-    href: "/index.html",
-  },
-  "Rex Fang",
-);
-
 const leftBarSignature = NewNode(
   "a",
   {
     signature: "",
     href: "/index.html",
   },
-  "Go Home",
+  "Rex Fang",
 );
 
 /**
@@ -56,11 +47,7 @@ export default function makeLeftBar() {
   let filename = CurrentFilename();
   let leftBar = LeftBar();
   // add left bar signature
-  if (filename) {
-    leftBar.appendChild(leftBarSignature);
-  } else {
-    leftBar.appendChild(indexSignature);
-  }
+  leftBar.appendChild(leftBarSignature);
   // add divider
   leftBar.appendChild(Divider());
   // iterate category
