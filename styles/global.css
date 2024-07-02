@@ -33,11 +33,11 @@
   --document-padding: 1.5em;
   --rounded-corner-radius: 0.2em;
 
-  font-family: "Drafting Mono";
+  font-family: "Drafting Mono", monospace;
 }
 
 code,
 kbd {
   font-size: small;
-  font-family: "Commit Mono R";
+  font-family: "Commit Mono R", monospace;
 }
