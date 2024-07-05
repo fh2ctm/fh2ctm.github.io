@@ -314,7 +314,7 @@ time {
 blockquote cite {
   display: block;
   text-align: right;
-  padding-right: 0.4em;
+  padding-right: 0.25em;
   font-style: unset;
 }
 
