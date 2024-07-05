@@ -1,0 +1,343 @@
+@import url("fonts/commit-mono/reg.css");
+@import url("fonts/drafting-mono/reg.css");
+
+:root {
+  --theme-tint-9: #e8f4f1;
+  --theme-tint-8: #d2eae4;
+  --theme-tint-7: #bbe0d7;
+  --theme-tint-6: #a5d6ca;
+  --theme-tint-5: #8eccbd;
+  --theme-tint-4: #78c2b0;
+  --theme-tint-3: #61b8a3;
+  --theme-tint-2: #4aae96;
+  --theme-tint-1: #34a489;
+  --theme: #1e9a7c;
+  --theme-shade-1: #1b8a6f;
+  --theme-shade-2: #187b63;
+  --theme-shade-3: #156b56;
+  --theme-shade-4: #125c4a;
+  --theme-shade-5: #0f4d3e;
+  --theme-shade-6: #0c3d31;
+  --theme-shade-7: #092e25;
+  --theme-shade-8: #061e18;
+  --theme-shade-9: #030f0c;
+
+  --bar-heading-font-size: 13pt;
+  --bar-item-font-size: 11pt;
+  --bar-item-vertical-padding: 0.5em;
+  --bar-width: 14em;
+  --document-font-size: 12pt;
+  --document-padding: 1.5em;
+  --rounded-corner-radius: 0.2em;
+
+  font-family: "Drafting Mono", monospace;
+}
+
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0;
+  background: #061e18;
+  color: #ffffff;
+}
+
+.hljs-tag,
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-strong,
+.hljs-name {
+  color: #f92672;
+}
+
+.hljs-code {
+  color: #66d9ef;
+}
+
+.hljs-attribute,
+.hljs-symbol,
+.hljs-regexp,
+.hljs-link {
+  color: #bf79db;
+}
+
+.hljs-string,
+.hljs-bullet,
+.hljs-subst,
+.hljs-title,
+.hljs-section,
+.hljs-emphasis,
+.hljs-type,
+.hljs-built_in,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-tag,
+.hljs-template-variable {
+  color: #a6e22e;
+}
+
+.hljs-title.class_,
+.hljs-class .hljs-title {
+  color: white;
+}
+
+.hljs-comment,
+.hljs-quote,
+.hljs-deletion,
+.hljs-meta {
+  color: #75715e;
+}
+
+code,
+kbd {
+  font-size: small;
+  font-family: "Commit Mono R", monospace;
+}
+
+nav {
+  font-size: var(--bar-item-font-size);
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-top: var(--document-padding);
+  position: fixed;
+  top: 0;
+  width: var(--bar-width);
+  z-index: 1;
+}
+
+nav span,
+nav.left a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+nav a[signature] {
+  margin: calc(0.5 * var(--bar-item-vertical-padding)) calc(0.6 * var(--document-padding));
+  padding: calc(0.5 * var(--bar-item-vertical-padding)) calc(0.3 * var(--document-padding));
+  font-size: var(--bar-heading-font-size);
+  font-weight: 300;
+}
+
+nav.left {
+  left: 0;
+  text-align: left;
+  background-color: var(--theme);
+  color: white;
+}
+
+nav.left a:not([signature]) {
+  margin: calc(0.5 * var(--bar-item-vertical-padding)) calc(0.6 * var(--document-padding));
+  padding: calc(0.5 * var(--bar-item-vertical-padding)) calc(0.4 * var(--document-padding));
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+nav.left a:hover,
+nav.left a[selected] {
+  color: var(--theme-shade-1);
+  background-color: white;
+  border-radius: var(--rounded-corner-radius);
+}
+
+nav.left a[signature]:hover {
+  font-weight: 600;
+}
+
+nav.left a[signature]:hover::after {
+  content: " ~";
+}
+
+nav.right {
+  background-color: transparent;
+  right: 0;
+  text-align: right;
+}
+
+nav span,
+nav.right a.h1 {
+  padding: var(--bar-item-vertical-padding) calc(0.85 * var(--document-padding));
+  font-weight: 600;
+  font-size: var(--bar-heading-font-size);
+}
+
+nav.right a {
+  color: darkgray;
+  display: block;
+  text-decoration: unset;
+}
+
+nav.right a.h2 {
+  padding: var(--bar-item-vertical-padding) calc(1.1 * var(--document-padding)) var(--bar-item-vertical-padding) var(--document-padding);
+}
+
+nav.right a:hover {
+  color: var(--theme-shade-1);
+}
+
+nav.right a[signature]:hover::before {
+  content: "^ ";
+}
+
+main {
+  margin: 0 var(--bar-width);
+  padding: var(--document-padding);
+  font-size: var(--document-font-size);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+main hr {
+  border: 1pt solid var(--theme);
+  margin: 2em 0;
+}
+
+main:not(:has(+ nav.right)) {
+  margin-right: 0;
+}
+
+p {
+  margin: var(--document-padding) 0;
+}
+
+h1 {
+  font-size: calc(var(--document-font-size) + 4pt);
+  font-weight: 700;
+  margin-top: 2em;
+}
+
+h2 {
+  font-size: calc(var(--document-font-size) + 2pt);
+  font-weight: 600;
+  margin-top: 1.6em;
+}
+
+h2::before {
+  content: "§ ";
+  color: darkgray;
+}
+
+del {
+  text-decoration: line-through;
+  background-color: #fed0ce;
+}
+
+ins {
+  text-decoration: underline;
+  background-color: #c5dacb;
+}
+
+b.important {
+  color: red;
+}
+
+details,
+blockquote {
+  border-left: var(--theme) 3pt solid;
+  background-color: var(--theme-tint-9);
+  padding: 1em 1em 1em calc(1em + 3pt);
+  margin: calc(var(--document-padding) / 2) 0;
+  border-top-right-radius: var(--rounded-corner-radius);
+  border-bottom-right-radius: var(--rounded-corner-radius);
+}
+
+main:not(:has(+ nav.right)) details,
+main:not(:has(+ nav.right)) blockquote {
+  margin-right: calc(var(--document-padding) / 2);
+}
+
+p code,
+ul code,
+ol code,
+table code {
+  background-color: var(--theme-tint-9);
+  padding: 0 0.3em;
+  border-radius: var(--rounded-corner-radius);
+}
+
+kbd {
+  padding: 0 0.25em;
+  border: var(--theme-shade-1) 1px solid;
+  border-radius: var(--rounded-corner-radius);
+  font-weight: 300;
+}
+
+p a[href] {
+  color: var(--theme-shade-1);
+  text-decoration: unset;
+}
+
+p a[href]:hover {
+  color: white;
+  background-color: var(--theme-tint-1);
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+table,
+td,
+th {
+  border: 0.6px solid darkgray;
+  padding: 4pt 7pt;
+}
+
+td {
+  text-align: left;
+}
+
+thead th {
+  font-weight: bold;
+  width: fit-content;
+}
+
+dl {
+  text-indent: 2em;
+}
+
+dt {
+  font-weight: 700;
+}
+
+time {
+  color: gray;
+  font-size: small;
+  font-weight: 300;
+}
+
+blockquote cite {
+  display: block;
+  text-align: right;
+  padding-right: 0.4em;
+  font-style: unset;
+}
+
+blockquote cite::before {
+  content: "--- ";
+}
+
+@media (max-width: 1080px) {
+  nav.right {
+    display: none;
+  }
+
+  main {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  nav.left {
+    display: none;
+  }
+
+  main {
+    margin-left: 0;
+  }
+}
