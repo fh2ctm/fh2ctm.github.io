@@ -3,10 +3,11 @@ export default {
     "courses-taken": "Courses Taken",
     "research": "Research",
   },
-  Items: {
+  Fun: {
     "keyboard": "Keyboards",
     "music": "Music",
     "pen": "Pens",
+    "misc": "Miscellaneous",
   },
   Language: {
     "cn-ime": "Chinese IME",
