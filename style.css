@@ -257,6 +257,7 @@ table code {
   background-color: var(--theme-tint-9);
   padding: 0 0.3em;
   border-radius: var(--rounded-corner-radius);
+  box-shadow: 0 1px 1px 0.5px lightgrey;
 }
 
 kbd {
@@ -264,6 +265,7 @@ kbd {
   border: var(--theme-shade-1) 1px solid;
   border-radius: var(--rounded-corner-radius);
   font-weight: 300;
+  box-shadow: 0 1px 1px 0.5px lightgrey;
 }
 
 p a[href] {
