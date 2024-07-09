@@ -102,14 +102,14 @@ function makeRightBar() {
         seenH1 = true;
       }
     }
-    let name = heading.id;
+    let label = heading.getAttribute("label");
     rightbar.appendChild(NewNode(
       "a",
       {
         class: "h" + hDepth,
         href: "#" + heading.id,
       },
-      name,
+      label ? label : heading.innerText,
     ));
   });
   rightbar.appendChild(Divider());
