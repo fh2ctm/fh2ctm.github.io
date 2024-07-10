@@ -44,9 +44,7 @@
       it is the only "native" Chinese phonetic writing system.
       However, there are some design choices that I have issues with.
     </p>
-    <h2 id="zy-cons" label="Construction">
-      Construction
-    </h2>
+    <h2 id="zy-ab">Alphabet</h2>
     <p>
       Zhuyin has three classes of glyphs.
     </p>
@@ -274,14 +272,37 @@
       </table>
     </div>
     <p>
+      Syllables take one of the following structures.
+    </p>
+    <ul>
+      <li>vowel</li>
+      <li>semivowel + vowel</li>
+      <li>consonent + vowel</li>
+      <li>consonent + semivowel + vowel</li>
+    </ul>
+    <p>
       When a consonant glyph appear by itself,
       it is considered a full syllable with vowel <code class="grow">ɨ</code>.
     </p>
-    <h2 id="zy-critique" label="Critique">
-      Advantages and Disadvantages
-    </h2>
     <p>
-
+      There are also tonal marks,
+      but they are full-width and placed right after each syllable construction,
+      and I find it too ugly to use.
+    </p>
+    <p>
+      Here are some examples.
+    </p>
+    <ul class="cjk">
+      <li>我觉得 wojuede ㄨㄛㄐㄩㄝㄉㄜ</li>
+      <li>雙拼 shuangpin ㄕㄨㄤㄆㄧㄣ</li>
+      <li>更好啊 genghaoa ㄍㄥㄏㄠㄚ</li>
+    </ul>
+    <p>
+      The glyphs follow (some of the) Chinese calligraphy traditions,
+      so in some ways it is more suitable.
+      However, it has some of the shortcomings as Pinyin, namely:
+      it can be ambiguous for certain phrases like <span class="cjk">西安/先</span>,
+      both spelled <span class="cjk">xian</span> and <span class="cjk">ㄒㄧㄢ</span> without using special glyphs or whitespaces.
     </p>
   </main>
   <nav class="right"></nav>

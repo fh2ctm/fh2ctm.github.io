@@ -31,10 +31,7 @@ const pageCategory = {
     "research": "Research",
   },
   Fun: {
-    "keyboard": "Keyboards",
-    "music": "Music",
-    "pen": "Pens",
-    "misc": "Miscellaneous",
+    "blog": "Blog",
   },
   Language: {
     "cn-ime": "Chinese IME",
