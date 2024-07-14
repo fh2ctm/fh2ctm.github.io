@@ -1,4 +1,5 @@
 @import url("fonts/drafting-mono/reg.css");
+@import url("fonts/jetbrains-mono/reg.css");
 
 :root {
   --theme-tint-9: #e8f4f1;
@@ -30,6 +31,10 @@
   --rounded-corner-radius: 0.2em;
 
   font-family: "Drafting Mono", monospace;
+}
+
+code {
+  font-family: "JetBrains Mono", monospace;
 }
 
 pre code.hljs {
