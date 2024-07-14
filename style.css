@@ -255,9 +255,6 @@ table code {
 
 kbd {
   font-family: inherit;
-}
-
-kbd {
   padding: 0 0.25em;
   border: var(--theme-shade-1) 1px solid;
   border-radius: var(--rounded-corner-radius);
