@@ -35,14 +35,15 @@
 
 code {
   font-family: "JetBrains Mono", monospace;
+  background: #061e18;
+  color: #d8d8d8;
 }
 
 pre code.hljs {
   display: block;
   overflow-x: auto;
   padding: 0;
-  background: #061e18;
-  color: #ffffff;
+  border-radius: var(--rounded-corner-radius);
 }
 
 .hljs-tag,
@@ -252,10 +253,8 @@ p code,
 ul code,
 ol code,
 table code {
-  background-color: var(--theme-tint-9);
   padding: 0 0.3em;
   border-radius: var(--rounded-corner-radius);
-  box-shadow: 0 1px 1px 0.5px lightgrey;
 }
 
 kbd {
