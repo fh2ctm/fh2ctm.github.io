@@ -53,7 +53,7 @@
   --bar-width: 14em;
   --document-font-size: 12pt;
   --document-padding: 1.5em;
-  --rounded-corner-radius: 6pt;
+  --rounded-corner-radius: 4pt;
 
   font-family: "Drafting Mono", monospace;
 }
