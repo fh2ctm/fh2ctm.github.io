@@ -35,6 +35,49 @@
   font-family: "Drafting Mono", monospace;
 }
 
+@media screen and (prefers-color-scheme: light) {
+  :root {
+    color: black;
+    background-color: white;
+    --nav-left-bg: var(--theme);
+    --nav-left-fg: white;
+    --nav-left-selected-bg: white;
+    --nav-left-selected-fg: var(--theme-shade-1);
+    --nav-right-fg: darkgray;
+    --nav-right-selected-fg: var(--theme-shade-1);
+    --blockquote-left-border-bg: var(--theme);
+    --blockquote-fg: black;
+    --blockquote-bg: var(--theme-tint-9);
+    --kbd-border-color: var(--theme-shade-1);
+    --kbd-shadow-color: lightgrey;
+    --link-fg: var(--theme-shade-1);
+    --link-hover-fg: white;
+    --link-hover-bg: var(--theme-tint-1);
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    color: rgb(216, 215, 215);
+    background-color: rgb(40, 40, 40);
+    --nav-left-bg: var(--theme-shade-2);
+    --nav-left-fg: rgb(216, 215, 215);
+    --nav-left-selected-bg: rgb(216, 215, 215);
+    --nav-left-selected-fg: var(--theme-shade-2);
+    --nav-right-fg: darkgray;
+    --nav-right-selected-fg: var(--theme-shade-2);
+    --blockquote-left-border-bg: var(--theme);
+    --blockquote-left-border-bg: var(--theme);
+    --blockquote-fg: inherit;
+    --blockquote-bg: var(--theme-shade-6);
+    --kbd-border-color: var(--theme-shade-2);
+    --kbd-shadow-color: var(--theme-shade-7);
+    --link-fg: var(--theme-tint-1);
+    --link-hover-fg: rgb(216, 215, 215);
+    --link-hover-bg: var(--theme-shade-1);
+  }
+}
+
 code {
   font-size: calc(var(--main-font-size) - 1pt);
   font-family: "JetBrains Mono", monospace;
@@ -76,22 +119,22 @@ nav a[signature] {
 nav.left {
   left: 0;
   text-align: left;
-  background-color: var(--theme);
-  color: white;
+  background-color: var(--nav-left-bg);
+  color: var(--nav-left-fg);
 }
 
 nav.left a:not([signature]) {
   margin: calc(0.5 * var(--bar-item-vertical-padding)) calc(0.6 * var(--main-padding));
   padding: calc(0.5 * var(--bar-item-vertical-padding)) calc(0.4 * var(--main-padding));
   text-decoration: none;
-  color: white;
+  color: var(--nav-left-fg);
   display: block;
 }
 
 nav.left a:hover,
 nav.left a[selected] {
-  color: var(--theme-shade-1);
-  background-color: white;
+  color: var(--nav-left-selected-fg);
+  background-color: var(--nav-left-selected-bg);
   border-radius: var(--rounded-corner-radius);
 }
 
@@ -117,7 +160,7 @@ nav.right a.h1 {
 }
 
 nav.right a {
-  color: darkgray;
+  color: var(--nav-right-fg);
   display: block;
   text-decoration: unset;
 }
@@ -127,7 +170,7 @@ nav.right a.h2 {
 }
 
 nav.right a:hover {
-  color: var(--theme-shade-1);
+  color: var(--nav-right-selected-fg);
 }
 
 nav.right a[signature]:hover::before {
@@ -188,8 +231,9 @@ b.important {
 
 details,
 blockquote {
-  border-left: var(--theme) 3pt solid;
-  background-color: var(--theme-tint-9);
+  border-left: var(--blockquote-left-border-bg) 3pt solid;
+  color: var(--blockquote-fg);
+  background-color: var(--blockquote-bg);
   padding: 1em;
   margin: calc(var(--main-padding) / 2) 0;
   border-top-right-radius: var(--rounded-corner-radius);
@@ -213,10 +257,10 @@ kbd {
   font-family: inherit;
   font-size: calc(var(--main-font-size) - 2pt);
   padding: 0 0.25em;
-  border: var(--theme-shade-1) 1px solid;
+  border: var(--kbd-border-color) 1px solid;
   border-radius: var(--rounded-corner-radius);
   font-weight: 500;
-  box-shadow: 0 1px 1px 0.5px lightgrey;
+  box-shadow: 0 1px 1px 0.5px var(--kbd-shadow-color);
 }
 
 .grow {
@@ -229,13 +273,13 @@ kbd {
 }
 
 p a[href] {
-  color: var(--theme-shade-1);
+  color: var(--link-fg);
   text-decoration: unset;
 }
 
 p a[href]:hover {
-  color: white;
-  background-color: var(--theme-tint-1);
+  color: var(--link-hover-fg);
+  background-color: var(--link-hover-bg);
 }
 
 table {
