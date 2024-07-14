@@ -2,6 +2,34 @@
 @import url("fonts/jetbrains-mono/reg.css");
 
 :root {
+  /* Everforest */
+  --ef-bg_dim: #232a2e;
+  --ef-bg0: #2d353b;
+  --ef-bg1: #343f44;
+  --ef-bg2: #3d484d;
+  --ef-bg3: #475258;
+  --ef-bg4: #4f585e;
+  --ef-bg5: #56635f;
+  --ef-bg_visual: #543a48;
+  --ef-bg_red: #514045;
+  --ef-bg_green: #425047;
+  --ef-bg_blue: #3a515d;
+  --ef-bg_yellow: #4d4c43;
+  --ef-fg: #d3c6aa;
+  --ef-red: #e67e80;
+  --ef-orange: #e69875;
+  --ef-yellow: #dbbc7f;
+  --ef-green: #a7c080;
+  --ef-aqua: #83c092;
+  --ef-blue: #7fbbb3;
+  --ef-purple: #d699b6;
+  --ef-grey0: #7a8478;
+  --ef-grey1: #859289;
+  --ef-grey2: #9da9a0;
+  --ef-statusline1: #a7c080;
+  --ef-statusline2: #d3c6aa;
+  --ef-statusline3: #e67e80;
+
   --theme-tint-9: #e8f4f1;
   --theme-tint-8: #d2eae4;
   --theme-tint-7: #bbe0d7;
@@ -35,8 +63,8 @@
 
 code {
   font-family: "JetBrains Mono", monospace;
-  background: #061e18;
-  color: #d8d8d8;
+  background: var(--ef-bg_dim);
+  color: var(--ef-fg);
 }
 
 pre code.hljs {
@@ -46,53 +74,69 @@ pre code.hljs {
   border-radius: var(--rounded-corner-radius);
 }
 
-.hljs-tag,
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-literal,
-.hljs-strong,
-.hljs-name {
-  color: #f92672;
+.hljs-deletion,
+.hljs-keyword {
+  color: var(--ef-red);
 }
 
-.hljs-code {
-  color: #66d9ef;
+.hljs-tag,
+.hljs-selector-tag,
+.hljs-title,
+.hljs-addition {
+  color: var(--ef-orange);
+}
+
+.hljs-link,
+.hljs-type {
+  color: var(--ef-yellow);
+}
+
+.hljs-name,
+.hljs-string,
+.hljs-literal,
+.hljs-regexp {
+  color: var(--ef-green);
+}
+
+.hljs-symbol,
+.hljs-meta {
+  color: var(--ef-aqua);
 }
 
 .hljs-attribute,
-.hljs-symbol,
-.hljs-regexp,
-.hljs-link {
-  color: #bf79db;
-}
-
-.hljs-string,
-.hljs-bullet,
-.hljs-subst,
-.hljs-title,
-.hljs-section,
-.hljs-emphasis,
-.hljs-type,
-.hljs-built_in,
 .hljs-selector-attr,
 .hljs-selector-pseudo,
-.hljs-addition,
-.hljs-variable,
+.hljs-variable {
+  color: var(--ef-blue);
+}
+
+.hljs-code,
+.hljs-built_in {
+  color: var(--ef-purple);
+}
+
 .hljs-template-tag,
 .hljs-template-variable {
-  color: #a6e22e;
+  color: var(--ef-grey0);
 }
 
-.hljs-title.class_,
-.hljs-class .hljs-title {
-  color: white;
+.hljs-comment {
+  color: var(--ef-grey1);
 }
 
-.hljs-comment,
+.hljs-subst,
+.hljs-bullet,
+.hljs-section {
+  color: var(--ef-grey2);
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
 .hljs-quote,
-.hljs-deletion,
-.hljs-meta {
-  color: #75715e;
+.hljs-emphasis {
+  font-style: italic;
 }
 
 nav {
