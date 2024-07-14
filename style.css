@@ -51,14 +51,15 @@
   --bar-item-font-size: 11pt;
   --bar-item-vertical-padding: 0.5em;
   --bar-width: 14em;
-  --document-font-size: 12pt;
-  --document-padding: 1.5em;
+  --main-font-size: 12pt;
+  --main-padding: 1.5em;
   --rounded-corner-radius: 4pt;
 
   font-family: "Drafting Mono", monospace;
 }
 
 code {
+  font-size: calc(var(--main-font-size) - 1pt);
   font-family: "JetBrains Mono", monospace;
   background: var(--ef-bg_dim);
   color: var(--ef-fg);
@@ -141,7 +142,7 @@ nav {
   height: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
-  padding-top: var(--document-padding);
+  padding-top: var(--main-padding);
   position: fixed;
   top: 0;
   width: var(--bar-width);
@@ -156,8 +157,8 @@ nav.left a {
 }
 
 nav a[signature] {
-  margin: calc(0.5 * var(--bar-item-vertical-padding)) calc(0.6 * var(--document-padding));
-  padding: calc(0.5 * var(--bar-item-vertical-padding)) calc(0.3 * var(--document-padding));
+  margin: calc(0.5 * var(--bar-item-vertical-padding)) calc(0.6 * var(--main-padding));
+  padding: calc(0.5 * var(--bar-item-vertical-padding)) calc(0.3 * var(--main-padding));
   font-size: var(--bar-heading-font-size);
   font-weight: 300;
 }
@@ -170,8 +171,8 @@ nav.left {
 }
 
 nav.left a:not([signature]) {
-  margin: calc(0.5 * var(--bar-item-vertical-padding)) calc(0.6 * var(--document-padding));
-  padding: calc(0.5 * var(--bar-item-vertical-padding)) calc(0.4 * var(--document-padding));
+  margin: calc(0.5 * var(--bar-item-vertical-padding)) calc(0.6 * var(--main-padding));
+  padding: calc(0.5 * var(--bar-item-vertical-padding)) calc(0.4 * var(--main-padding));
   text-decoration: none;
   color: white;
   display: block;
@@ -200,7 +201,7 @@ nav.right {
 
 nav span,
 nav.right a.h1 {
-  padding: var(--bar-item-vertical-padding) calc(0.85 * var(--document-padding));
+  padding: var(--bar-item-vertical-padding) calc(0.85 * var(--main-padding));
   font-weight: 600;
   font-size: var(--bar-heading-font-size);
 }
@@ -212,7 +213,7 @@ nav.right a {
 }
 
 nav.right a.h2 {
-  padding: var(--bar-item-vertical-padding) calc(1.1 * var(--document-padding)) var(--bar-item-vertical-padding) var(--document-padding);
+  padding: var(--bar-item-vertical-padding) calc(1.1 * var(--main-padding)) var(--bar-item-vertical-padding) var(--main-padding);
 }
 
 nav.right a:hover {
@@ -225,8 +226,8 @@ nav.right a[signature]:hover::before {
 
 main {
   margin: 0 var(--bar-width);
-  padding: var(--document-padding);
-  font-size: var(--document-font-size);
+  padding: var(--main-padding);
+  font-size: var(--main-font-size);
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -241,17 +242,17 @@ main:not(:has(+ nav.right)) {
 }
 
 p {
-  margin: var(--document-padding) 0;
+  margin: var(--main-padding) 0;
 }
 
 h1 {
-  font-size: calc(var(--document-font-size) + 4pt);
+  font-size: calc(var(--main-font-size) + 4pt);
   font-weight: 700;
   margin-top: 2em;
 }
 
 h2 {
-  font-size: calc(var(--document-font-size) + 2pt);
+  font-size: calc(var(--main-font-size) + 2pt);
   font-weight: 600;
   margin-top: 1.6em;
 }
@@ -280,14 +281,14 @@ blockquote {
   border-left: var(--theme) 3pt solid;
   background-color: var(--theme-tint-9);
   padding: 1em;
-  margin: calc(var(--document-padding) / 2) 0;
+  margin: calc(var(--main-padding) / 2) 0;
   border-top-right-radius: var(--rounded-corner-radius);
   border-bottom-right-radius: var(--rounded-corner-radius);
 }
 
 main:not(:has(+ nav.right)) details,
 main:not(:has(+ nav.right)) blockquote {
-  margin-right: calc(var(--document-padding) / 2);
+  margin-right: calc(var(--main-padding) / 2);
 }
 
 p code,
@@ -330,7 +331,7 @@ table {
   float: left;
   table-layout: fixed;
   border-collapse: collapse;
-  margin-right: var(--document-padding);
+  margin-right: var(--main-padding);
 }
 
 table,
