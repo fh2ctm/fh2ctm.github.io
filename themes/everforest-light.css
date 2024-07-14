@@ -1,0 +1,95 @@
+:root {
+  --ef-bg_dim: #232a2e;
+  --ef-bg0: #2d353b;
+  --ef-bg1: #343f44;
+  --ef-bg2: #3d484d;
+  --ef-bg3: #475258;
+  --ef-bg4: #4f585e;
+  --ef-bg5: #56635f;
+  --ef-bg_visual: #543a48;
+  --ef-bg_red: #514045;
+  --ef-bg_green: #425047;
+  --ef-bg_blue: #3a515d;
+  --ef-bg_yellow: #4d4c43;
+  --ef-fg: #d3c6aa;
+  --ef-red: #e67e80;
+  --ef-orange: #e69875;
+  --ef-yellow: #dbbc7f;
+  --ef-green: #a7c080;
+  --ef-aqua: #83c092;
+  --ef-blue: #7fbbb3;
+  --ef-purple: #d699b6;
+  --ef-grey0: #7a8478;
+  --ef-grey1: #859289;
+  --ef-grey2: #9da9a0;
+}
+
+code {
+  background: var(--ef-bg_dim);
+  color: var(--ef-fg);
+}
+
+.hljs-deletion,
+.hljs-keyword {
+  color: var(--ef-red);
+}
+
+.hljs-tag,
+.hljs-selector-tag,
+.hljs-title,
+.hljs-addition {
+  color: var(--ef-orange);
+}
+
+.hljs-link,
+.hljs-type {
+  color: var(--ef-yellow);
+}
+
+.hljs-name,
+.hljs-string,
+.hljs-literal,
+.hljs-regexp {
+  color: var(--ef-green);
+}
+
+.hljs-symbol,
+.hljs-meta {
+  color: var(--ef-aqua);
+}
+
+.hljs-attribute,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-variable {
+  color: var(--ef-blue);
+}
+
+.hljs-code,
+.hljs-built_in {
+  color: var(--ef-purple);
+}
+
+.hljs-template-tag,
+.hljs-template-variable {
+  color: var(--ef-grey0);
+}
+
+.hljs-comment {
+  color: var(--ef-grey1);
+}
+
+.hljs-subst,
+.hljs-bullet,
+.hljs-section {
+  color: var(--ef-grey2);
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-quote,
+.hljs-emphasis {
+  font-style: italic;
+}
