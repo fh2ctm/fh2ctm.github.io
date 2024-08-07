@@ -3,20 +3,32 @@
 
 <head>
   <link rel="stylesheet" href="/style.css" />
-  <!-- <link rel="stylesheet" href="/fonts/sarasa-mono-tc/reg.css" /> -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet"> -->
   <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
   <meta charset="utf8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title filename="template">Template</title>
   <!-- <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 </head>
 
 <body>
   <script type="module" src="/gen.js"></script>
-  <!-- <script>hljs.highlightAll();</script> -->
+  <script>hljs.highlightAll();</script>
   <nav class="left"></nav>
-  <main></main>
+  <main>
+    Sample code block. 
+    <pre><code class="swift">
+  func hereIs(a codeBlock: CodeBlock) -> any CustomStringConvertible {
+    guard codeBlock.looksGood() else {
+      fix()
+    }
+  }
+    </pre></code>
+    and <code>inline code</code> as well.
+  </main>
   <nav class="right"></nav>
 </body>
 

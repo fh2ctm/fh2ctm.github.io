@@ -1,6 +1,5 @@
 @import url("fonts/drafting-mono/reg.css");
-@import url("fonts/jetbrains-mono/reg.css");
-@import url("fonts/source-code/reg.css");
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
 @media screen and (prefers-color-scheme: light) {
   :root {
@@ -193,10 +192,8 @@
 }
 
 code {
-  background: var(--ef-bg0);
   color: var(--ef-fg);
-  font-size: calc(var(--main-font-size) - 2pt);
-  font-family: "Source Code", monospace;
+  font-family: "Inconsolata", monospace;
 }
 
 pre code.hljs {
@@ -371,7 +368,7 @@ table code {
 }
 
 kbd {
-  font-family: "Source Code", monospace;
+  font-family: "Inconsolata", monospace;
   font-size: calc(var(--main-font-size) - 2pt);
   padding: 0 0.25em;
   color: black;
@@ -460,7 +457,7 @@ blockquote cite::before {
 }
 
 .cjk {
-  font-family: "Sarasa Mono TC", sans-serif;
+  font-family: "LXGW WenKai Mono TC", monospace;
 }
 
 @media (max-width: 1080px) {
