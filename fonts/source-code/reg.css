@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Source Code";
+  font-style: normal;
+  font-weight: normal;
+  src: url("SourceCode-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Code";
+  font-style: italic;
+  font-weight: normal;
+  src: url("SourceCode-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Code";
+  font-style: normal;
+  font-weight: bold;
+  src: url("SourceCode-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Code";
+  font-style: italic;
+  font-weight: bold;
+  src: url("SourceCode-BoldItalic.woff2") format("woff2");
+}

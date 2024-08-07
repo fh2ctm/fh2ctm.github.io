@@ -1,5 +1,6 @@
 @import url("fonts/drafting-mono/reg.css");
 @import url("fonts/jetbrains-mono/reg.css");
+@import url("fonts/source-code/reg.css");
 
 @media screen and (prefers-color-scheme: light) {
   :root {
@@ -194,8 +195,8 @@
 code {
   background: var(--ef-bg0);
   color: var(--ef-fg);
-  font-size: calc(var(--main-font-size) - 1pt);
-  font-family: "JetBrains Mono", monospace;
+  font-size: calc(var(--main-font-size) - 2pt);
+  font-family: "Source Code", monospace;
 }
 
 pre code.hljs {
@@ -281,7 +282,8 @@ nav.right a {
 }
 
 nav.right a.h2 {
-  padding: var(--bar-item-vertical-padding) calc(1.1 * var(--main-padding)) var(--bar-item-vertical-padding) var(--main-padding);
+  padding:
+    var(--bar-item-vertical-padding) calc(1.1 * var(--main-padding)) var(--bar-item-vertical-padding) var(--main-padding);
 }
 
 nav.right a:hover {
@@ -369,7 +371,7 @@ table code {
 }
 
 kbd {
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Source Code", monospace;
   font-size: calc(var(--main-font-size) - 2pt);
   padding: 0 0.25em;
   color: black;
