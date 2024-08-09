@@ -3,311 +3,311 @@
 <html lang="en-CA">
 
 <head>
-  <link rel="stylesheet" href="/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
-  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
-  <meta charset="utf8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title filename="cn-ime">Chinese Input Methods</title>
-  <style>
-    .table-group {
-      display: inline-block;
-      margin: 0;
-      padding: 0;
-    }
-  </style>
+	<link rel="stylesheet" href="/style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
+	<link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+	<meta charset="utf8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title filename="cn-ime">Chinese Input Methods</title>
+	<style>
+		.table-group {
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+		}
+	</style>
 </head>
 
 <body>
-  <script type="module" src="/gen.js"></script>
-  <nav class="left"></nav>
-  <main>
-    <p>
-      I discuss different input methods for the Chinese language.
-    </p>
-    <h1 id="zhuyin" label="Zhuyin">
-      Zhuyin (Bopomofo)
-    </h1>
-    <p>
-      A phonetic system developed by the Republic of China (Taiwan) in the 20th century.
-    </p>
-    <p>
-      I got interested in it because I would like to type Traditional Chinese.
-      Seems like Taiwan is still using Zhuyin
-      (instead of the IMO vastly superior <a href="#Shuangpin">ulpb</a>).
-      so I thought I'd try it out.
-      It was <i>very</i> uncomfortable at first,
-      but I think I got used to it.
-    </p>
-    <p>
-      What makes it cool is that in some sense,
-      it is the only "native" Chinese phonetic writing system.
-      However, there are some design choices that I have issues with.
-    </p>
-    <h2 id="zy-ab">Alphabet</h2>
-    <p>
-      Zhuyin has three classes of glyphs.
-    </p>
-    <div class="table-container cjk">
-      <table label="zhuyin-consonants-table">
-        <caption>Consonants</caption>
-        <thead>
-          <tr>
-            <th>Glyph</th>
-            <th>IPA</th>
-            <th>Pinyin</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="glyph">ㄅ</td>
-            <td class="ipa">[p]</td>
-            <td class="pinyin">b</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄆ</td>
-            <td class="ipa">[pʰ]</td>
-            <td class="pinyin">p</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄇ</td>
-            <td class="ipa">[m]</td>
-            <td class="pinyin">m</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄈ</td>
-            <td class="ipa">[f]</td>
-            <td class="pinyin">f</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄉ</td>
-            <td class="ipa">[t]</td>
-            <td class="pinyin">d</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄊ</td>
-            <td class="ipa">[tʰ]</td>
-            <td class="pinyin">t</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄋ</td>
-            <td class="ipa">[n]</td>
-            <td class="pinyin">n</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄌ</td>
-            <td class="ipa">[l]</td>
-            <td class="pinyin">l</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄍ</td>
-            <td class="ipa">[k]</td>
-            <td class="pinyin">g</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄎ</td>
-            <td class="ipa">[kʰ]</td>
-            <td class="pinyin">k</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄏ</td>
-            <td class="ipa">[h~x]</td>
-            <td class="pinyin">h</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄐ</td>
-            <td class="ipa">[tɕ]</td>
-            <td class="pinyin">j</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄑ</td>
-            <td class="ipa">[tɕʰ]</td>
-            <td class="pinyin">q</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄒ</td>
-            <td class="ipa">[ɕ]</td>
-            <td class="pinyin">x</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄓ</td>
-            <td class="ipa">[tʃ]</td>
-            <td class="pinyin">zh</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄔ</td>
-            <td class="ipa">[tʃʰ]</td>
-            <td class="pinyin">ch</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄕ</td>
-            <td class="ipa">[ʃ]</td>
-            <td class="pinyin">sh</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄖ</td>
-            <td class="ipa">[ɹ~ʐ]</td>
-            <td class="pinyin">r</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄗ</td>
-            <td class="ipa">[ts]</td>
-            <td class="pinyin">z</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄘ</td>
-            <td class="ipa">[tsʰ]</td>
-            <td class="pinyin">c</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄙ</td>
-            <td class="ipa">[s]</td>
-            <td class="pinyin">s</td>
-          </tr>
-        </tbody>
-      </table>
-      <table label="zhuyin-semivowels-table">
-        <caption>Semivowels</caption>
-        <thead>
-          <tr>
-            <th>Glyph</th>
-            <th>IPA</th>
-            <th>Pinyin</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="glyph">ㄧ</td>
-            <td class="ipa">[j]</td>
-            <td class="pinyin">i</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄨ</td>
-            <td class="ipa">[w]</td>
-            <td class="pinyin">u</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄩ</td>
-            <td class="ipa">[ʎ]</td>
-            <td class="pinyin">ü</td>
-          </tr>
-        </tbody>
-      </table>
-      <table label="zhuyin-vowels-table">
-        <caption>Vowels</caption>
-        <thead>
-          <tr>
-            <th>Glyph</th>
-            <th>IPA</th>
-            <th>Pinyin</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="glyph">ㄚ</td>
-            <td class="ipa">[a]</td>
-            <td class="pinyin">a</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄛ</td>
-            <td class="ipa">[ɔ]</td>
-            <td class="pinyin">o</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄜ</td>
-            <td class="ipa">[ʌ]</td>
-            <td class="pinyin">e</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄝ</td>
-            <td class="ipa">[ɛ]</td>
-            <td class="pinyin">eh</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄞ</td>
-            <td class="ipa">[aɪ]</td>
-            <td class="pinyin">ai</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄟ</td>
-            <td class="ipa">[eɪ]</td>
-            <td class="pinyin">ei</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄠ</td>
-            <td class="ipa">[aʊ]</td>
-            <td class="pinyin">ao</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄡ</td>
-            <td class="ipa">[oʊ]</td>
-            <td class="pinyin">o/ou</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄢ</td>
-            <td class="ipa">[an]</td>
-            <td class="pinyin">an</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄣ</td>
-            <td class="ipa">[ən]</td>
-            <td class="pinyin">en</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄤ</td>
-            <td class="ipa">[aŋ]</td>
-            <td class="pinyin">ang</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄥ</td>
-            <td class="ipa">[əŋ]</td>
-            <td class="pinyin">eng</td>
-          </tr>
-          <tr>
-            <td class="glyph">ㄦ</td>
-            <td class="ipa">[ə˞]</td>
-            <td class="pinyin">er</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p>
-      Syllables take one of the following structures.
-    </p>
-    <ul>
-      <li>vowel</li>
-      <li>semivowel + vowel</li>
-      <li>consonent + vowel</li>
-      <li>consonent + semivowel + vowel</li>
-    </ul>
-    <p>
-      When a consonant glyph appear by itself,
-      it is considered a full syllable with vowel <code class="grow">ɨ</code>.
-    </p>
-    <p>
-      There are also tonal marks,
-      but they are full-width and placed right after each syllable construction,
-      and I find it too ugly to use.
-    </p>
-    <p>
-      Here are some examples.
-    </p>
-    <ul class="cjk">
-      <li>我觉得 wojuede ㄨㄛㄐㄩㄝㄉㄜ</li>
-      <li>雙拼 shuangpin ㄕㄨㄤㄆㄧㄣ</li>
-      <li>更好啊 genghaoa ㄍㄥㄏㄠㄚ</li>
-    </ul>
-    <p>
-      The glyphs follow (some of the) Chinese calligraphy traditions,
-      so in some ways it is more suitable.
-      However, it has some of the shortcomings as Pinyin, namely:
-      it can be ambiguous for certain phrases like <span class="cjk">西安/先</span>,
-      both spelled <span class="cjk">xian</span> and <span class="cjk">ㄒㄧㄢ</span> without using special glyphs or whitespaces.
-    </p>
-  </main>
-  <nav class="right"></nav>
+	<script type="module" src="/gen.js"></script>
+	<nav class="left"></nav>
+	<main>
+		<p>
+			I discuss different input methods for the Chinese language.
+		</p>
+		<h1 id="zhuyin" label="Zhuyin">
+			Zhuyin (Bopomofo)
+		</h1>
+		<p>
+			A phonetic system developed by the Republic of China (Taiwan) in the 20th century.
+		</p>
+		<p>
+			I got interested in it because I would like to type Traditional Chinese.
+			Seems like Taiwan is still using Zhuyin
+			(instead of the IMO vastly superior <a href="#Shuangpin">ulpb</a>).
+			so I thought I'd try it out.
+			It was <i>very</i> uncomfortable at first,
+			but I think I got used to it.
+		</p>
+		<p>
+			What makes it cool is that in some sense,
+			it is the only "native" Chinese phonetic writing system.
+			However, there are some design choices that I have issues with.
+		</p>
+		<h2 id="zy-ab">Alphabet</h2>
+		<p>
+			Zhuyin has three classes of glyphs.
+		</p>
+		<div class="table-container cjk">
+			<table label="zhuyin-consonants-table">
+				<caption>Consonants</caption>
+				<thead>
+					<tr>
+						<th>Glyph</th>
+						<th>IPA</th>
+						<th>Pinyin</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="glyph">ㄅ</td>
+						<td class="ipa">[p]</td>
+						<td class="pinyin">b</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄆ</td>
+						<td class="ipa">[pʰ]</td>
+						<td class="pinyin">p</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄇ</td>
+						<td class="ipa">[m]</td>
+						<td class="pinyin">m</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄈ</td>
+						<td class="ipa">[f]</td>
+						<td class="pinyin">f</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄉ</td>
+						<td class="ipa">[t]</td>
+						<td class="pinyin">d</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄊ</td>
+						<td class="ipa">[tʰ]</td>
+						<td class="pinyin">t</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄋ</td>
+						<td class="ipa">[n]</td>
+						<td class="pinyin">n</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄌ</td>
+						<td class="ipa">[l]</td>
+						<td class="pinyin">l</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄍ</td>
+						<td class="ipa">[k]</td>
+						<td class="pinyin">g</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄎ</td>
+						<td class="ipa">[kʰ]</td>
+						<td class="pinyin">k</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄏ</td>
+						<td class="ipa">[h~x]</td>
+						<td class="pinyin">h</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄐ</td>
+						<td class="ipa">[tɕ]</td>
+						<td class="pinyin">j</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄑ</td>
+						<td class="ipa">[tɕʰ]</td>
+						<td class="pinyin">q</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄒ</td>
+						<td class="ipa">[ɕ]</td>
+						<td class="pinyin">x</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄓ</td>
+						<td class="ipa">[tʃ]</td>
+						<td class="pinyin">zh</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄔ</td>
+						<td class="ipa">[tʃʰ]</td>
+						<td class="pinyin">ch</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄕ</td>
+						<td class="ipa">[ʃ]</td>
+						<td class="pinyin">sh</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄖ</td>
+						<td class="ipa">[ɹ~ʐ]</td>
+						<td class="pinyin">r</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄗ</td>
+						<td class="ipa">[ts]</td>
+						<td class="pinyin">z</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄘ</td>
+						<td class="ipa">[tsʰ]</td>
+						<td class="pinyin">c</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄙ</td>
+						<td class="ipa">[s]</td>
+						<td class="pinyin">s</td>
+					</tr>
+				</tbody>
+			</table>
+			<table label="zhuyin-semivowels-table">
+				<caption>Semivowels</caption>
+				<thead>
+					<tr>
+						<th>Glyph</th>
+						<th>IPA</th>
+						<th>Pinyin</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="glyph">ㄧ</td>
+						<td class="ipa">[j]</td>
+						<td class="pinyin">i</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄨ</td>
+						<td class="ipa">[w]</td>
+						<td class="pinyin">u</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄩ</td>
+						<td class="ipa">[ʎ]</td>
+						<td class="pinyin">ü</td>
+					</tr>
+				</tbody>
+			</table>
+			<table label="zhuyin-vowels-table">
+				<caption>Vowels</caption>
+				<thead>
+					<tr>
+						<th>Glyph</th>
+						<th>IPA</th>
+						<th>Pinyin</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="glyph">ㄚ</td>
+						<td class="ipa">[a]</td>
+						<td class="pinyin">a</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄛ</td>
+						<td class="ipa">[ɔ]</td>
+						<td class="pinyin">o</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄜ</td>
+						<td class="ipa">[ʌ]</td>
+						<td class="pinyin">e</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄝ</td>
+						<td class="ipa">[ɛ]</td>
+						<td class="pinyin">eh</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄞ</td>
+						<td class="ipa">[aɪ]</td>
+						<td class="pinyin">ai</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄟ</td>
+						<td class="ipa">[eɪ]</td>
+						<td class="pinyin">ei</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄠ</td>
+						<td class="ipa">[aʊ]</td>
+						<td class="pinyin">ao</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄡ</td>
+						<td class="ipa">[oʊ]</td>
+						<td class="pinyin">o/ou</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄢ</td>
+						<td class="ipa">[an]</td>
+						<td class="pinyin">an</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄣ</td>
+						<td class="ipa">[ən]</td>
+						<td class="pinyin">en</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄤ</td>
+						<td class="ipa">[aŋ]</td>
+						<td class="pinyin">ang</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄥ</td>
+						<td class="ipa">[əŋ]</td>
+						<td class="pinyin">eng</td>
+					</tr>
+					<tr>
+						<td class="glyph">ㄦ</td>
+						<td class="ipa">[ə˞]</td>
+						<td class="pinyin">er</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p>
+			Syllables take one of the following structures.
+		</p>
+		<ul>
+			<li>vowel</li>
+			<li>semivowel + vowel</li>
+			<li>consonent + vowel</li>
+			<li>consonent + semivowel + vowel</li>
+		</ul>
+		<p>
+			When a consonant glyph appear by itself,
+			it is considered a full syllable with vowel <code class="grow">ɨ</code>.
+		</p>
+		<p>
+			There are also tonal marks,
+			but they are full-width and placed right after each syllable construction,
+			and I find it too ugly to use.
+		</p>
+		<p>
+			Here are some examples.
+		</p>
+		<ul class="cjk">
+			<li>我觉得 wojuede ㄨㄛㄐㄩㄝㄉㄜ</li>
+			<li>雙拼 shuangpin ㄕㄨㄤㄆㄧㄣ</li>
+			<li>更好啊 genghaoa ㄍㄥㄏㄠㄚ</li>
+		</ul>
+		<p>
+			The glyphs follow (some of the) Chinese calligraphy traditions,
+			so in some ways it is more suitable.
+			However, it has some of the shortcomings as Pinyin, namely:
+			it can be ambiguous for certain phrases like <span class="cjk">西安/先</span>,
+			both spelled <span class="cjk">xian</span> and <span class="cjk">ㄒㄧㄢ</span> without using special glyphs or whitespaces.
+		</p>
+	</main>
+	<nav class="right"></nav>
 </body>
 
 </html>
