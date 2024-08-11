@@ -119,7 +119,7 @@
 	--bar-width: 14em;
 	--main-font-size: 12pt;
 	--main-padding: 1.5em;
-	--rounded-corner-radius: 2pt;
+	--rounded-corner-radius: 3pt;
 
 	color: var(--fg);
 	background-color: var(--bg);
@@ -192,7 +192,9 @@
 }
 
 code {
+	background-color: var(--ef-bg0);
 	color: var(--ef-fg);
+	border: 1px solid var(--ef-bg_dim);
 	font-family: "Inconsolata", monospace;
 }
 
@@ -369,7 +371,7 @@ table code {
 
 kbd {
 	font-family: "Inconsolata", monospace;
-	font-size: calc(var(--main-font-size) - 2pt);
+	font-size: calc(var(--main-font-size) - 1pt);
 	padding: 0 0.25em;
 	color: black;
 	background: rgb(240, 240, 240);
