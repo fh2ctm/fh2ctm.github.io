@@ -64,7 +64,7 @@ leftBar.appendChild(Divider());
 Object.entries(pageCategory).forEach(([category, pages]) => {
 	leftBar.appendChild(Divider(category));
 	Object.entries(pages).forEach(([title, page]) => {
-		let pageDir = "/pages/" + category.toLowerCase() + "/" + title + ".html";
+		let pageDir = "/" + category.toLowerCase() + "/" + title + ".html";
 		let link = NewNode("a", { href: pageDir }, page);
 		if (filename == title) link.setAttribute("selected", "");
 		leftBar.appendChild(link);
