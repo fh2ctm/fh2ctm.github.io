@@ -26,14 +26,14 @@ function NewNode(tag = "badtag", attr = null, text = "") {
  * Layout of the page structure. 
  */
 const pageCategory = {
-	Academic: {
+	"Academic": {
 		"courses-taken": "Courses Taken",
 		"research": "Research",
 	},
-	Fun: {
+	"Fun": {
 		"blog": "Blog",
 	},
-	Language: {
+	"Language": {
 		"cn-ime": "Chinese IME",
 		"qeerty": "QÉERTY Keyboard",
 	},
