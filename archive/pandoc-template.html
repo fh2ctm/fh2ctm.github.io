@@ -1,43 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-CA">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-
-	<title filename="${outputfile}">${title}</title>
+	<meta charset="utf8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<link rel="stylesheet" href="/style.css" />
 	<link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
 
-$if(code)$
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-$endif$
+	<title filename="${file-name}">${title}</title>
 
-$if(cjk)$
+	$if(cjk)$
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
-$endif$
+	$endif$
 
-$if(math)$
+	$if(math)$
 	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-$endif$
+	$endif$
+
+	$if(code)$
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+	$endif$
 </head>
 
 <body>
 	<script type="module" src="/gen.js"></script>
-$if(code)$
+
+	$if(code)$
 	<script>hljs.highlightAll();</script>
-$endif$
+	$endif$
+
 	<nav class="left"></nav>
+
 	<main>
 		${body}
 	</main>
-$if(right-bar)$
+
+	$if(right-bar)$
 	<nav class="right"></nav>
-$endif$
+	$endif$
 </body>
 
 </html>
