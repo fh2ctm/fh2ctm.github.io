@@ -7,32 +7,5 @@ math: true
 right-bar: true
 ...
 
-This is to test if the generation works. 
+Please use this template for pandoc generation. 
 
-# First Heading { #hello label="Rex" }
-
-I am Rex, welcome to the first site generated with markdown. 
-
-Here is a quote block:
-
-> Hello, my name is Rex!
-> I hope this is good. 
-
-And here's some `code`. And of course we have code blocks as well, 
-
-```c
-int main(void) {
-	printf("Hello, world!");
-	return 0;
-}
-```
-
-## A Second Meeting
-
-Just for fun. $\pi$ is not real. In fact, 
-
-$$
-	\pi + 2 = 3
-$$
-
-isn't that crazy!
