@@ -202,7 +202,7 @@ code {
 pre code.hljs {
 	display: block;
 	overflow-x: auto;
-	padding: 0;
+	padding: var(--main-padding);
 	border-radius: var(--rounded-corner-radius);
 }
 
@@ -313,6 +313,10 @@ main:not(:has(+ nav.right)) {
 
 p {
 	margin: var(--main-padding) 0;
+}
+
+blockquote p {
+	margin: 0;
 }
 
 h1 {
