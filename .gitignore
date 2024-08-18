@@ -1,3 +1,5 @@
 **/.DS_Store
 **/*.config.mjs
 /.idea/
+/pmd
+!/pmd/template.pmd
