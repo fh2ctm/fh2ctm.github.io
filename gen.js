@@ -32,6 +32,7 @@ const pageCategory = {
 	},
 	"Fun": {
 		"blog": "Blog",
+		"words": "Words",
 	},
 	"Language": {
 		"cn-ime": "Chinese IME",

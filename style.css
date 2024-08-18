@@ -395,11 +395,13 @@ kbd {
 	transform: scale(5);
 }
 
+span a[href],
 p a[href] {
 	color: var(--link-fg);
 	text-decoration: unset;
 }
 
+span a[href]:hover,
 p a[href]:hover {
 	color: var(--link-hover-fg);
 	background-color: var(--link-hover-bg);
@@ -448,15 +450,12 @@ time {
 	font-weight: 300;
 }
 
+span.cite,
 blockquote cite {
 	display: block;
 	text-align: right;
 	padding-right: 0.25em;
 	font-style: unset;
-}
-
-blockquote cite::before {
-	content: "--- ";
 }
 
 .table-container {
