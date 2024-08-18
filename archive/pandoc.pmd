@@ -1,9 +1,9 @@
 ---
 file-name: test
 title: Testing if pandoc generation works
-code: true
+code: false
 cjk: false
-math: true
+math: false
 right-bar: true
 ...
 
