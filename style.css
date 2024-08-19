@@ -124,6 +124,7 @@
 	color: var(--fg);
 	background-color: var(--bg);
 	font-family: "Drafting Mono", monospace;
+	line-height: 140%;
 	tab-size: 2;
 }
 
@@ -444,17 +445,9 @@ dt {
 	font-weight: 700;
 }
 
-time {
-	color: gray;
-	font-size: small;
-	font-weight: 300;
-}
-
 span.cite,
 blockquote cite {
-	display: block;
-	text-align: right;
-	padding-right: 0.25em;
+	float: right;
 	font-style: unset;
 }
 
