@@ -27,7 +27,7 @@ function NewNode(tag = "badtag", attr = null, text = "") {
  */
 const pageCategory = {
 	"Academic": {
-		"courses-taken": "Courses Taken",
+		"courses": "Courses",
 		"research": "Research",
 	},
 	"Fun": {
