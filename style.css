@@ -447,7 +447,8 @@ dt {
 
 span.cite,
 blockquote cite {
-	float: right;
+	display: block;
+	text-align: right;
 	font-style: unset;
 }
 
