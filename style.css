@@ -460,22 +460,22 @@ blockquote cite {
 	font-family: "LXGW WenKai Mono TC", monospace;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1000px) {
 	nav.right {
 		display: none;
 	}
 
 	main {
-		margin-right: 0;
+		margin-right: var(--main-padding);
 	}
 }
 
-@media (max-width: 760px) {
+@media (max-width: 800px) {
 	nav.left {
 		display: none;
 	}
 
 	main {
-		margin-left: 0;
+		margin-left: var(--main-padding);
 	}
 }
