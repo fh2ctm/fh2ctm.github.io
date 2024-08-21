@@ -48,9 +48,9 @@
 
 @media screen and (prefers-color-scheme: dark) {
 	:root {
-		--fg: rgb(200, 200, 200);
-		--bg: black;
-		--nav-left-bg: var(--theme-shade-3);
+		--fg: rgb(140, 140, 140);
+		--bg: rgb(30, 30, 30);
+		--nav-left-bg: var(--theme-shade-4);
 		--nav-left-fg: var(--fg);
 		--nav-left-selected-bg: var(--fg);
 		--nav-left-selected-fg: var(--theme-shade-2);
