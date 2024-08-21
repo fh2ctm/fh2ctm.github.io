@@ -53,7 +53,7 @@
 		--nav-left-bg: var(--theme-shade-4);
 		--nav-left-fg: var(--fg);
 		--nav-left-selected-bg: var(--fg);
-		--nav-left-selected-fg: var(--theme-shade-2);
+		--nav-left-selected-fg: var(--theme-shade-4);
 		--nav-right-fg: darkgray;
 		--nav-right-selected-fg: var(--theme-shade-2);
 		--blockquote-left-border-bg: var(--theme);
