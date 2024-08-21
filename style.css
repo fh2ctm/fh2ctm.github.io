@@ -48,14 +48,14 @@
 
 @media screen and (prefers-color-scheme: dark) {
 	:root {
-		--fg: rgb(140, 140, 140);
-		--bg: rgb(30, 30, 30);
-		--nav-left-bg: var(--theme-shade-4);
+		--fg: white;
+		--bg: #1f1e26;
+		--nav-left-bg: var(--theme-shade-1);
 		--nav-left-fg: var(--fg);
 		--nav-left-selected-bg: var(--fg);
-		--nav-left-selected-fg: var(--theme-shade-4);
+		--nav-left-selected-fg: var(--theme-shade-2);
 		--nav-right-fg: darkgray;
-		--nav-right-selected-fg: var(--theme-shade-2);
+		--nav-right-selected-fg: var(--theme-tint-1);
 		--blockquote-left-border-bg: var(--theme);
 		--blockquote-left-border-bg: var(--theme);
 		--blockquote-fg: inherit;
