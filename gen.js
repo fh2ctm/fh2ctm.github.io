@@ -31,7 +31,7 @@ const pageCategory = {
 	"Guides": {
 		"vim": "Vim",
 	},
-	"Language": {
+	"Languages": {
 		"cn-ime": "Chinese IME",
 		"qeerty": "QÉERTY Keyboard",
 	},
