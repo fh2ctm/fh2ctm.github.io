@@ -24,8 +24,8 @@
     <p>Tips and tricks for using vim. You can get my configuration
     files <a href="https://github.com/fh2ctm/dotvim">here</a>.</p>
     <h1 id="appearance">Appearance</h1>
-    <h2 id="automatic-lightdark-switch">Automatic Light/Dark
-    Switch</h2>
+    <h2 label="Theme Switch" id="automatic-lightdark-switch">
+    Automatic Light/Dark Switch</h2>
     <p>Vim does not support native light/dark switch based on your
     terminal background / system theme.</p>
     <p>Fortunately, if you are using macOS, there is <a href=
@@ -44,6 +44,25 @@ else
     set bg=dark
 endif</code></pre>
     <p>et voilà!</p>
+    <h1 id="editing">Editing</h1>
+    <p>Tips for editing in vim.</p>
+    <h2 id="alignment">Alignment</h2>
+    <p>Sometimes you’d want to align column blocks in your code.
+    How do you do this?</p>
+    <p>I’ve found <a href=
+    "https://github.com/junegunn/vim-easy-align">vim-easy-align</a>
+    to be quite useful. For that, I’ve mapped <code>-</code> to the
+    alignment key:</p>
+    <pre class="vim"><code>nnoremap - &lt;Plug&gt;(EasyAlign)
+xnoremap - &lt;Plug&gt;(EasyAlign)</code></pre>
+    <p>now suppose I want to align the types in the following:</p>
+    <pre class="swift"><code>let favouriteNumbers: [Int]
+let name: String</code></pre>
+    <p>I just enter <code>Vj-2 &lt;CR&gt;</code> and it will be
+    aligned:</p>
+    <pre class="swift"><code>let favouriteNumbers: [Int]
+let name:             String</code></pre>
+    <p>very nice.</p>
   </main>
   <nav class="right"></nav>
 </body>
