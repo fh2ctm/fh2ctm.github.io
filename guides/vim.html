@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for HTML5 for Apple macOS version 5.8.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+  <title filename="vim">Vim tips and tricks</title>
+  <script src=
+  "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src=
+  "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/vim.min.js"></script>
+</head>
+<body>
+  <script type="module" src="/gen.js"></script> 
+  <script>
+  hljs.highlightAll();
+  </script>
+  <nav class="left"></nav>
+  <main>
+    <p>Tips and tricks for using vim. You can get my configuration
+    files <a href="https://github.com/fh2ctm/dotvim">here</a>.</p>
+    <h1 id="appearance">Appearance</h1>
+    <h2 id="automatic-lightdark-switch">Automatic Light/Dark
+    Switch</h2>
+    <p>Vim does not support native light/dark switch based on your
+    terminal background / system theme.</p>
+    <p>Fortunately, if you are using macOS, there is <a href=
+    "https://github.com/cormacrelf/dark-notify/">dark-notify</a> to
+    help! You can run <code>dark-notify -e</code> to get the
+    current app theme, either <code>light</code> or
+    <code>dark</code>.</p>
+    <p>So, you can set a variable from your shell,</p>
+    <pre class=
+    "bash"><code>export BG=$(dark-notify -e)</code></pre>
+    <p>and read it in your vimrc,</p>
+    <pre class="vim"><code>" .vimrc
+if $BG[0] == 'l'
+    set bg=light
+else
+    set bg=dark
+endif</code></pre>
+    <p>et voilà!</p>
+  </main>
+  <nav class="right"></nav>
+</body>
+</html>
