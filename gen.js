@@ -28,6 +28,9 @@ const pageCategory = {
 		"blog": "Blog",
 		"words": "Words",
 	},
+	"Guides": {
+		"vim": "Vim",
+	},
 	"Language": {
 		"cn-ime": "Chinese IME",
 		"qeerty": "QÉERTY Keyboard",
@@ -102,3 +105,12 @@ if (document.querySelector("nav.right")) {
 	});
 	rightbar.appendChild(Divider());
 }
+
+// Fix pandoc codeblock language class labeling
+// See https://github.com/rstudio/blogdown/issues/520
+
+document.querySelectorAll('pre').forEach(function(el) {
+	if (!el.className) return;
+	el.firstElementChild.classList.add('lang-' + el.className);
+	el.removeAttribute('class');
+});
