@@ -415,9 +415,10 @@ p a[href] {
 
 span a[href]:hover,
 p a[href]:hover {
-	color: var(--link-hover-fg);
-	background-color: var(--link-hover-bg);
-	border-radius: var(--rounded-corner-radius);
+	/* color: var(--link-hover-fg); */
+	/* background-color: var(--link-hover-bg); */
+	/* border-radius: var(--rounded-corner-radius); */
+	text-decoration: underline;
 }
 
 table {
