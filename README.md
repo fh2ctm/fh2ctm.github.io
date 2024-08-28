@@ -1,9 +1,9 @@
 My personal website with GitHub pages.
 
-# Fonts
+Fonts:
 
 - [Drafting Mono](https://indestructibletype.com/Drafting/)
 
-# Themes
+Codeblock themes:
 
 - [Everforest](https://github.com/sainnhe/everforest)
