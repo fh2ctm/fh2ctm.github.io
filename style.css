@@ -337,6 +337,17 @@ h2::before {
 	color: darkgray;
 }
 
+h3 {
+	font-size: calc(var(--main-font-size) + 1pt);
+	font-weight: 550;
+	margin-top: 1.4em;
+}
+
+h3::before {
+	content: "§§ ";
+	color: darkgray;
+}
+
 del {
 	text-decoration: line-through;
 	background-color: #fed0ce;
