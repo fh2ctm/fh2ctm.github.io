@@ -21,11 +21,45 @@
   </script>
   <nav class="left"></nav>
   <main>
-    <p>Tips and tricks for using vim. You can get my configuration
-    files <a href="https://github.com/fh2ctm/dotvim">here</a>.</p>
+    <p>Tips and tricks for using vim.</p>
+    <h1 id="config">Config</h1>
+    <p>You can get my configuration files <a href=
+    "https://github.com/fh2ctm/dotvim">here</a>.</p>
+    <p><em>Updated 240903</em>: I’ll explain here what my config
+    does.</p>
+    <pre class="vim"><code>if $BG[0] == 'l'
+    set bg=light
+else
+    set bg=dark
+endif</code></pre>
+    <p>this is explained in the <a href="#alds">next
+    section</a>.</p>
+    <pre class="vim"><code>colorscheme wildcharm
+filetype indent plugin on
+syntax enable</code></pre>
+    <p>select colorscheme and enable syntax highlighting and
+    filetype plugins.</p>
+    <pre class=
+    "vim"><code>let g:context_highlight_tag = '&lt;hide&gt;'</code></pre>
+    <p>hide highlight tag for <a href=
+    "https://github.com/wellle/context.vim">context.vim</a>.</p>
+    <pre class="vim"><code>let g:mapleader = "\ "
+let g:maplocalleader = "\\"</code></pre>
+    <p>set leader keys.</p>
+    <pre class="vim"><code>let g:fzf_colors = ...</code></pre>
+    <p>adjust fzf window colours to match colorscheme.</p>
+    <pre class=
+    "vim"><code>let g:fzf_vim = { 'preview_window' : [] }</code></pre>
+    <p>disable fzf preview window.</p>
+    <pre class=
+    "vim"><code>let g:snipMate = { 'snippet_version' : 1 }</code></pre>
+    <p>snipmate options.</p>
+    <pre class="vim"><code>let no_plugin_maps = 1</code></pre>
+    <p>don’t use filetype plugin mappings. The rest of the file are
+    keymaps and options.</p>
     <h1 id="appearance">Appearance</h1>
-    <h2 label="Theme Switch" id="automatic-lightdark-switch">
-    Automatic Light/Dark Switch</h2>
+    <h2 label="Theme Switch" id="alds">Automatic Light/Dark
+    Switch</h2>
     <p>Vim does not support native light/dark switch based on your
     terminal background / system theme.</p>
     <p>Fortunately, if you are using macOS, there is <a href=
