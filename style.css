@@ -367,7 +367,7 @@ blockquote {
 	border-left: var(--blockquote-left-border-bg) 3pt solid;
 	color: var(--blockquote-fg);
 	background-color: var(--blockquote-bg);
-	padding: 1em;
+	padding: 1em 1.5em;
 	margin: calc(var(--main-padding) / 2) 0;
 	border-top-right-radius: var(--rounded-corner-radius);
 	border-bottom-right-radius: var(--rounded-corner-radius);
