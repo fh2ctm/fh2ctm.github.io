@@ -109,8 +109,10 @@ if (document.querySelector("nav.right")) {
 // Fix pandoc codeblock language class labeling
 // See https://github.com/rstudio/blogdown/issues/520
 
-document.querySelectorAll('pre').forEach(function(el) {
-	if (!el.className) return;
-	el.firstElementChild.classList.add('lang-' + el.className);
-	el.removeAttribute('class');
-});
+if (document.querySelector("body script")) {
+	document.querySelectorAll('pre').forEach(function(el) {
+		if (!el.className) return;
+		el.firstElementChild.classList.add('lang-' + el.className);
+		el.removeAttribute('class');
+	});
+}
