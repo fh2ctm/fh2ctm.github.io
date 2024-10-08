@@ -27,10 +27,6 @@ const pageCategory = {
   "Guides": {
     "vim": "Vim",
   },
-  "Languages": {
-    "cn-ime": "Chinese IME",
-    "qeerty": "QÉERTY Keyboard",
-  },
 };
 
 /**
