@@ -24,6 +24,10 @@ const pageCategory = {
     "courses": "Courses",
     "research": "Research",
   },
+  "Fun": {
+    "blog": "Blog",
+    "words": "Words",
+  },
   "Guides": {
     "vim": "Vim",
   },
